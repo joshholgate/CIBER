@@ -1,0 +1,4050 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: field-profile.eps
+%%Creator: gnuplot 5.0 patchlevel 5
+%%CreationDate: Tue Dec 12 17:22:46 2017
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -66 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 302 lineto 50 302 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.1 (Oct 2015)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (field-profile.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.0 patchlevel 5)
+  /Author (jth14)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Tue Dec 12 17:22:46 2017)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt May 2005
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { Boxing
+    { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if } def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox 1 1 1 setrgbcolor fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+% redundant definitions for compatibility with prologue.ps older than 5.0.2
+/LTB {BL [] LCb DL} def
+/LTb {PL [] LCb DL} def
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 200 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 5040.00 BoxColFill} if
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor false def
+/cF33 {2 mul 0.5 sub abs} bind def	% |2*x - 0.5|
+/cF13 {180 mul sin} bind def	% sin(180x)
+/cF10 {90 mul cos} bind def	% cos(90x)
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF33 Constrain exch dup cF13 Constrain exch cF10 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+LCb setrgbcolor
+1385 840 M
+63 0 V
+3896 0 R
+-63 0 V
+stroke
+1265 840 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0)]
+] -66.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1385 1830 M
+63 0 V
+3896 0 R
+-63 0 V
+stroke
+1265 1830 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.5)]
+] -66.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1385 2820 M
+63 0 V
+3896 0 R
+-63 0 V
+stroke
+1265 2820 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1)]
+] -66.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1385 3809 M
+63 0 V
+3896 0 R
+-63 0 V
+stroke
+1265 3809 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1.5)]
+] -66.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1385 4799 M
+63 0 V
+3896 0 R
+-63 0 V
+stroke
+1265 4799 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 2)]
+] -66.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1385 840 M
+0 63 V
+0 3896 R
+0 -63 V
+stroke
+1385 640 M
+[ [(Helvetica) 200.0 0.0 true true 0 (-1)]
+] -66.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2375 840 M
+0 63 V
+0 3896 R
+0 -63 V
+stroke
+2375 640 M
+[ [(Helvetica) 200.0 0.0 true true 0 (-0.5)]
+] -66.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3365 840 M
+0 63 V
+0 3896 R
+0 -63 V
+stroke
+3365 640 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0)]
+] -66.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4354 840 M
+0 63 V
+0 3896 R
+0 -63 V
+stroke
+4354 640 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.5)]
+] -66.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5344 840 M
+0 63 V
+0 3896 R
+0 -63 V
+stroke
+5344 640 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1)]
+] -66.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+1385 4799 N
+0 -3959 V
+3959 0 V
+0 3959 V
+-3959 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+685 2819 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 200.0 0.0 true true 0 (z / )]
+[(Symbol) 200.0 0.0 true true 0 (l)]
+[(Helvetica) 160.0 -60.0 true true 0 (D)]
+] -46.7 MCshow
+grestore
+LTb
+LCb setrgbcolor
+3364 340 M
+[ [(Helvetica) 200.0 0.0 true true 0 (r / )]
+[(Symbol) 200.0 0.0 true true 0 (l)]
+[(Helvetica) 160.0 -60.0 true true 0 (D)]
+] -46.7 MCshow
+LTb
+% Begin plot #1
+1.000 UL
+LTb
+0.58 0.00 0.83 C /Helvetica findfont 200 scalefont setfont
+/vshift -66 def
+%%%%BeginImage
+gsave 1385 4799 N 1385 840 L 5344 840 L 5344 4799 L Z clip
+InterpretLevel1 {
+  %% Construct a box instead of image
+  LTb
+  3365 4819 M
+  1979 0 V
+  0 -3979 V
+  -1979 0 V
+  3365 4819 L
+  40 -110 R
+  (PS level 2 image) Lshow
+  % Read data but ignore it
+  /imagebuf 24144 string def
+  currentfile imagebuf readstring
+} {
+gsave
+3365 4819 translate
+1979 -3979 scale
+%%%%BeginPalette
+[ /Indexed
+  /DeviceRGB 255
+  <
+   8000ff 7e03ff 7c06ff 7a09ff 780dff 7610ff 7413ff 7216ff
+   7019ff 6e1cff 6c1fff 6a22fe 6826fe 6629fe 642cfe 622ffe
+   6032fe 5e35fe 5c38fd 5a3bfd 583efd 5641fd 5444fd 5247fc
+   504afc 4e4dfc 4c50fc 4a53fb 4856fb 4659fb 445cfb 425ffa
+   4062fa 3e65fa 3c68f9 396bf9 386df9 3670f8 3473f8 3176f8
+   3079f7 2e7bf7 2c7ef7 2981f6 2884f6 2686f5 2489f5 218cf4
+   208ef4 1e91f3 1c93f3 1996f3 1898f2 169bf2 149df1 11a0f1
+   10a2f0 0ea5ef 0ca7ef 09a9ee 08acee 06aeed 04b0ed 01b3ec
+   00b5eb 02b7eb 04b9ea 07bbea 08bee9 0ac0e8 0dc2e8 0fc4e7
+   10c6e6 12c8e6 14cae5 17cbe4 18cde4 1acfe3 1dd1e2 1fd3e1
+   21d5e1 22d6e0 24d8df 27dade 29dbde 2adddd 2ddedc 2fe0db
+   31e1da 32e3da 34e4d9 37e6d8 39e7d7 3ae8d6 3dead5 3febd5
+   41ecd4 42edd3 44eed2 47efd1 49f1d0 4af2cf 4df3ce 4ff3cd
+   51f4cc 52f5cb 54f6cb 57f7ca 59f8c9 5af8c8 5df9c7 5ffac6
+   61fac5 62fbc4 64fbc3 67fcc2 69fcc1 6afdc0 6dfdbf 6ffebe
+   71febc 72febb 74feba 77ffb9 79ffb8 7affb7 7dffb6 7fffb5
+   81ffb4 83ffb3 84ffb2 86ffb0 88ffaf 8bfeae 8dfead 8ffeac
+   91feab 93fda9 94fda8 96fca7 99fca6 9bfba5 9dfba4 9ffaa2
+   a1faa1 a3f9a0 a4f89f a6f89d a8f79c abf69b adf59a aff498
+   b1f397 b3f396 b4f295 b6f193 b9ef92 bbee91 bded8f bfec8e
+   c1eb8d c3ea8c c4e88a c6e789 c8e688 cbe486 cde385 cfe184
+   d1e082 d3de81 d4dd80 d6db7e d9da7d dbd87b ddd67a dfd579
+   e1d377 e3d176 e4cf74 e6cd73 e8cb72 ebca70 edc86f efc66d
+   f1c46c f3c26b f4c069 f6be68 f9bb66 fbb965 fdb763 ffb562
+   ffb360 ffb05f ffae5e ffac5c ffa95b ffa759 ffa558 ffa256
+   ffa055 ff9d53 ff9b52 ff9850 ff964f ff934d ff914c ff8e4a
+   ff8c49 ff8947 ff8646 ff8444 ff8143 ff7e41 ff7b40 ff793e
+   ff763d ff733b ff703a ff6d38 ff6b37 ff6835 ff6533 ff6232
+   ff5f30 ff5c2f ff592d ff562c ff532a ff5029 ff4d27 ff4a26
+   ff4724 ff4422 ff4121 ff3e1f ff3b1e ff381c ff351b ff3219
+   ff2f18 ff2c16 ff2914 ff2613 ff2211 ff1f10 ff1c0e ff190d
+   ff160b ff1309 ff1008 ff0d06 ff0905 ff0603 ff0302 ff0000
+  >
+] setcolorspace
+%%%%EndPalette
+<<
+  /ImageType 1
+  /Width 100
+  /Height 201
+  /BitsPerComponent 8
+  /ImageMatrix [ 100 0 0 201 0 0 ]
+  /Decode [ 0 255 ]
+  /DataSource currentfile /ASCII85Decode filter
+  /MultipleDataSources false
+  /Interpolate false
+>>
+image
+} ifelse
+;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?
+Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;
+c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?U
+n;c?Un;c?Un;c?Un<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)
+cgr<)cgr<)cgr<)Z^o;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un<)cgr<)cgr<)cgr
+<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)c
+gr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<
+)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cg
+r<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E
+3%!<E3%!<E3%!<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!
+<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3
+%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<
+E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<`W7%<`W7%<`W7
+%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`
+W7%<`W7%<`W7%<`W7$<E3%!<E3%!<E3%!<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%
+<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W
+7%='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&F'<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<
+`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%='&I)='&I)='&I)='&I)='&I)='&I
+)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='
+&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)
+='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)=BJ[-=BJ[-=BJ
+[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-='&I)='&I)='&I)='&I)='&I)='&I)='&I)=
+'&I)='&I)='&I)='&I)='&I)='&I)='&I)=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[
+-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=B
+J[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-
+=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=]nm1=]nm1=]nm1=]nm1=]nm1=]n
+m1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm0=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=
+BJ[-=BJ[-=BJ[-=BJ[-=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm
+1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1>$>*5>$>*5>$
+>*5>$>*4=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1
+=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>
+*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*4=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=
+]nm1>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*
+5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>?b<9>?b<9>?b<9>?b<9>?b<9>?
+b<9>?b<9>?b<9>?b97>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5
+>$>*5>$>*5>$>*5>$>*5>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b
+<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<8>$>*5>$>*5>$>*5>$>*5>$>*5>?b<9>?b<9>
+?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<
+9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[
+1N=>[1N=>[1N=>[1K;>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9
+>?b<9>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1
+N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=?!U`A?!U`A?!U`A?!U`@>[1N=>
+[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N
+=>[1N=>[1N=>[1N=>[1N=?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!
+U`A?!U`A?!U`A?!LW>>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=?!U`A?!U`A
+?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U
+`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?
+<piB?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`
+A?!U`A?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=
+$rE?=$rE?=$rD?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?=$rE?=$rE?=$rE?=$rE?=$rE
+?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$
+rE?=$rE?=$rE?=$rE?=$rE?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?
+X@&F?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?XI/I?XI/
+I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?X
+I/I?XI/I?X@&F?=$rE?=$rE?=$rE?=$rE?=$rE?smAM?smAM?smAM?smAM?smAM?smAM?XI/I?XI/I
+?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI
+/I?XI/I?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?sm>K?
+XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?smAM?smAM?smAM?smAM?smA
+M?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?s
+mAM?smAM?smAM?sd8J?XI/I@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:3JN?smAM
+?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM@:<SQ@:<
+SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SP?smAM?
+smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM@U`eU@U`eU@U`eU@U`eU@U`bS@:<SQ@:<SQ@:<S
+Q@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:
+<SQ@:<SQ@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eT@:<SQ@:<SQ
+@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@U`eU@U`eU@U`eU@U`eU@U`
+eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eT@:<SQ@:<SQ@
+:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@U`eU@U`eU@U`e
+U@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@q0"Y@q
+0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"X@U`eU@U`eU@U`eU
+@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eUA7T4]A7T4]A7T4]A7T4]@q0"Y@q0"Y@q0"Y@q0
+"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q&nV@U`eU@U`eU@
+U`eU@U`eUA7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T1[@q0"Y@q0"Y@q0"
+Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"YA7T4]A7T4]A7T4]A7T4]A7
+T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T1[@q0"Y@q0"Y@q0"Y@q0"Y
+@q0"Y@q0"Y@q0"Y@q0"Y@q0"YAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#C_A7T4]A7T4]A7T
+4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7K+ZAS#FaA
+S#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#C_A7T4]A7T4]A7T4]A7T4
+]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]AnGXeAnGXeAnGXeAnGXeAn>ObAS#FaAS#FaAS
+#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#C_A7T4]A7T4]A7T4]A7T4]A7T4]
+A7T4]A7T4]AnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAS#FaAS#FaAS#FaAS#
+FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAnGXeAnGXeAnGXeAnGXeA
+nGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAn>ObAS#FaAS#FaAS#FaAS#FaAS#F
+aAS#FaAS#FaAS#FaAS#FaAS#FaB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kggAnGXeAnGXeAn
+GXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAn>ObAS#FaAS#FaAS#FaAS#FaAS#FaB4kji
+B4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjhAnGXeAnGXeAnGXeAnGXeAnG
+XeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeBP;'mBP;'mBP;'mBP;'mBP;'mB4kjiB4kjiB
+4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjhAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGX
+eAnGXeAnGXeBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'lB4kjiB4kjiB4kjiB4
+kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4bafAnGXeAnGXeAnGXeBP;'mBP;'mBP;'mBP;'m
+BP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP1sjB4kjiB4kjiB4kjiB4kjiB4kjiB4k
+jiB4kjiB4kjiB4kjiB4kjiB4kjiBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9pBP;'mBP;'mB
+P;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP1sjB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiBk_9
+qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_6oBP;'mBP;'mBP;'mBP;'mBP
+;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mC2.KuC2.KuC2.KuC2.KuC2.KuC2.KtBk_9q
+Bk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9pBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;
+'mBP;'mBP;'mC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KtBk_9qBk_9qBk_9qB
+k_9qBk_9qBk_9qBk_9qBk_9qBk_9pBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mCMR^$CMR^$CMR^$CMR[
+"C2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KtBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk
+_9qBk_9qBk_9qBk_9qBk_9qBk_9qCMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$C2.KuC2.Ku
+C2.KuC2.KuC2.KuC2.KuC2.KuC2.KuBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qCMR
+^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMIU!C2.KuC2.KuC2.KuC2.KuC
+2.KuC2.KuC2.KuC2.KuC2%BrBk_9qBk_9qBk_9qBk_9qCi!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!m
+&CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$C2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2
+.KuC2.KuC2.KuCi!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p'CMR^$CMR^$CMR^$
+CMR^$CMR^$CMR^$CMR^$CMIU!C2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuD/F-,D/F-,D/F-,D/F
+-,D/F-,Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!m&CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$C
+MR^$CMR^$CMR^#C2.KuC2.KuC2.KuD/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F**Ci!p
+(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Chmg%CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$DJ
+j?0DJj?0DJj?0DJj<.D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/=$)Ci!p(Ci!p(Ci!p(Ci!p(
+Ci!p(Ci!p(Chmg%CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj
+?0DJa6-D/F-,D/F-,D/F-,D/F-,D/F-,D/F-+Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(C
+i!p(Ci!p(Chmg%Df9Q4Df9N2DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0D/F-,D/F-,D/F-
+,D/F-,D/F-,D/F-,D/=$)Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Df9Q4Df9Q4Df9Q4Df
+9Q4Df9Q4Df9Q4Df0H1DJj?0DJj?0DJj?0DJj?0DJj?0DJa6-D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,
+D/=$)Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4DJj
+?0DJj?0DJj?0DJj?0DJj?0DJj?/D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,E
+,]c8E,]c8E,]c8E,]c8E,]c8E,TZ5Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df0H1DJj?0DJj?0DJj?0DJj?
+0DJj?0DJa6-D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,E,]c8E,]c8E,]c8E,]c8E,]c8E,]c8E,
+]c8E,]c8Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df0H1DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJa6-D/F-,
+D/F-,D/F-,D/F-,EH,u<EH,u<EH,u<EH,u<EH#l9E,]c8E,]c8E,]c8E,]c8E,]c8E,TZ5Df9Q4Df9
+Q4Df9Q4Df9Q4Df9N2DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0EH,u<EH,u<EH,u<E
+H,u<EH,u<EH,u<EH,u<EH#l9E,]c8E,]c8E,]c8E,]c8E,TZ5Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4DJj?
+0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0EcQ2@EcQ2@EcQ2@EcQ/>EH,u<EH,u<EH,u<EH,u<EH,u<EH
+,r:E,]c8E,]c8E,]c8E,]c8E,TZ5Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df0H1DJj?0DJj?0DJj?0
+EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ/>EH,u<EH,u<EH,u<EH,u<EH#l9E,]c8E,]c8E,]c8E,]
+c8E,TZ5Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4F)uDDF)uDDF)uABEcQ2@EcQ2@EcQ2@E
+cQ2@EcQ2@EcQ2?EH,u<EH,u<EH,u<EH,u<EH#l9E,]c8E,]c8E,]c8E,]c8E,]c7Df9Q4Df9Q4Df9Q
+4Df9Q4Df9Q4Df9Q4F)uDDF)uDDF)uDDF)uDDF)uDDF)uDDEcQ2@EcQ2@EcQ2@EcQ2@EcQ/>EH,u<EH
+,u<EH,u<EH,u<E,]c8E,]c8E,]c8E,]c8E,]c8E,]c8E,]c8E,TZ5Df9Q4Df9Q4FEDVHFEDVGF)uDD
+F)uDDF)uDDF)uDDF)uDDF)uDDEcQ2@EcQ2@EcQ2@EcQ2@EcH)=EH,u<EH,u<EH,u<EH,u<E,]c8E,]
+c8E,]c8E,]c8E,]c8E,]c8E,]c8E,]c8FEDVHFEDVHFEDVHFEDVHFEDVHFE;MEF)uDDF)uDDF)uDDF
+)uDCEcQ2@EcQ2@EcQ2@EcQ2@EH,u<EH,u<EH,u<EH,u<EH,u<EH#l9E,]c8E,]c8E,]c8E,]c8E,]c
+8FEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFEDSFF)uDDF)uDDF)uDDF)uABEcQ2@EcQ2@EcQ2@Ec
+Q/>EH,u<EH,u<EH,u<EH,u<EH,u<EH,u<EH,u<EH#l9E,]c8F`hhLF`hhLF`hhLF`hhLF`hhLFEDVH
+FEDVHFEDVHFEDVHFE;MEF)uDDF)uDDF)uDDEcQ2@EcQ2@EcQ2@EcQ2@EcQ/>EH,u<EH,u<EH,u<EH,
+u<EH,u<EH,u<EH,u<F`hhLF`hhLF`hhLF`hhLF`hhLF`hhLF`hhLFEDVHFEDVHFEDVHFEDVGF)uDDF
+)uDDF)uDDF)uABEcQ2@EcQ2@EcQ2@EcQ2@EcQ2?EH,u<EH,u<EH,u<EH,u<EH,u<G'8%PG'8%PG'8%
+PG'8%PG'8"NF`hhLF`hhLF`hhLF`hhKFEDVHFEDVHFEDVHFE;MEF)uDDF)uDDF)uDDF)l;AEcQ2@Ec
+Q2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@G'8%PG'8%PG'8%PG'8%PG'8%PG'8%PG'8"NF`hhLF`hhL
+F`hhLF`__IFEDVHFEDVHFEDVGF)uDDF)uDDF)uDDF)uDDEcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ
+2@GB\7TGB\7TGB\7TGB\7TGBS.QG'8%PG'8%PG'8%PG'.qMF`hhLF`hhLF`heJFEDVHFEDVHFEDVHF
+)uDDF)uDDF)uDDF)uDDF)uDDF)l;AEcQ2@EcQ2@EcQ2@EcQ2@GB\7TGB\7TGB\7TGB\7TGB\7TGB\7
+TGBS.QG'8%PG'8%PG'8%OF`hhLF`hhLF`hhKFEDVHFEDVHFEDVHFEDVGF)uDDF)uDDF)uDDF)uDDF)
+uDDF)uDDF)uDDF)uDDG^+IXG^+IXG^+IXG^+IXGB\7TGB\7TGB\7TGB\7SG'8%PG'8%PG'8%PF`hhL
+F`hhLF`hhLF`__IFEDVHFEDVHFEDVHFE;MEF)uDDF)uDDF)uDDF)uDDF)uDDF)uDDG^+IXG^+IXG^+
+IXG^+IXG^+IXG^+IXGB\7TGB\7TGB\7TGBS.QG'8%PG'8%PG'.qMF`hhLF`hhLF`heJFEDVHFEDVHF
+EDVHFEDVHFEDSFF)uDDF)uDDF)uDDF)uDDH$O[\H$O[\H$O[\H$O[\G^+IXG^+IXG^+IXG^+FVGB\7
+TGB\7TGB\4RG'8%PG'8%PG'8"NF`hhLF`hhLF`hhLFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFE
+DVHH$O[\H$O[\H$O[\H$O[\H$O[\H$O[[G^+IXG^+IXG^+IWGB\7TGB\7TGB\4RG'8%PG'8%PG'8"N
+F`hhLF`hhLF`hhLF`hhKFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHH?sm`H?sm`H?sm`H?sm_H$O[\H$O
+[\H$O[\H$FRYG^+IXG^+IXGB\7TGB\7TGB\7SG'8%PG'8%PG'8%PF`hhLF`hhLF`hhLF`hhLF`hhKF
+EDVHFEDVHFEDVHFEDVHH?sm`H?sm`H?sm`H?sm`H?sm`H?sm_H$O[\H$O[\H$OXZG^+IXG^+IXGB\7
+TGB\7TGB\7SG'8%PG'8%PG'8%PG'.qMF`hhLF`hhLF`hhLF`hhLF`hhLF`hhLF`hhLH[C*dH[C*dH[
+C*dH[C*dH?sm`H?sm`H?sm`H$O[\H$O[\H$OXZG^+IXG^+IXG^"@UGB\7TGB\7TG'8%PG'8%PG'8%P
+G'8%OF`hhLF`hhLF`hhLF`hhLF`hhLF`hhLI!g<hH[C*dH[C*dH[C*dH[C*dH[C'bH?sm`H?sm`H?j
+d]H$O[\H$O[[G^+IXG^+IXG^"@UGB\7TGB\7TGBS.QG'8%PG'8%PG'8%PG'8%OF`hhLF`hhLF`hhLF
+`hhLI!g<hI!g<hI!g<hI!g<hH[C*dH[C*dH[C*dH?sm`H?sm`H?jd]H$O[\H$O[[G^+IXG^+IXG^"@
+UGB\7TGB\7TGB\4RG'8%PG'8%PG'8%PG'8%PG'8%PG'8%PG'8%PI=6NlI=6KjI!g<hI!g<hI!g<hI!
+g9fH[C*dH[C*dH?sm`H?sm`H?jd]H$O[\H$OXZG^+IXG^+IXG^"@UGB\7TGB\7TGB\7TG'8%PG'8%P
+G'8%PG'8%PG'8%PG'8%PI=6NlI=6NlI=6NlI=6NlI!g<hI!g<hI!g<gH[C*dH[C*dH?sm`H?sm`H?j
+d]H$O[\H$OXZG^+IXG^+IXG^+FVGB\7TGB\7TGB\7TGB\7SG'8%PG'8%PG'8%PG'8%PIXZ`pIXZ`pI
+XQWmI=6NlI=6NlI=6KjI!g<hI!g<gH[C*dH[C*dH?sm`H?sm`H$O[\H$O[\H$OXZG^+IXG^+IXG^+F
+VGB\7TGB\7TGB\7TGB\7TGB\7TGB\7TGB\7TIXZ`pIXZ`pIXZ`pIXZ`pIXQWmI=6NlI=6NkI!g<hI!
+g<gH[C*dH[C*cH?sm`H?sm`H$O[\H$O[\H$OXZG^+IXG^+IXG^+IXGB\7TGB\7TGB\7TGB\7TGB\7T
+GB\7TIt)rtIt)rtIt)orIXZ`pIXZ`pIXZ]nI=6NlI=6NkI!g<hI!g<gH[C*dH[C*cH?sm`H?sm_H$O
+[\H$O[\H$OXZG^+IXG^+IXG^+IXG^+IWGB\7TGB\7TGB\7TGB\7TIt)rtIt)rtIt)rtIt)rtIsuiqI
+XZ`pIXZ]nI=6NlI=6KjI!g<hI!g9fH[C*dH[C'bH?sm`H?sm_H$O[\H$O[\H$O[[G^+IXG^+IXG^+I
+XG^+IXG^+IXG^+IXGB\7TJ:N0#J:N0#J:N0#It)rtIt)rtIt)orIXZ`pIXZ]nI=6NlI=6KjI!g<hI!
+^3eH[C*dH[:!aH?sm`H?sj^H$O[\H$O[\H$O[\G^+IXG^+IXG^+IXG^+IXG^+IXG^+IXJUrB'J:N0#
+J:N0#J:N0#J:N-!It)rtIt)orIXZ`pIXZ]nI=6NlI=-EiI!g<hH[C*dH[C*dH?sm`H?sm`H?sj^H$O
+[\H$O[\H$O[\H$OXZG^+IXG^+IXG^+IXG^+IXJUrB'JUrB'JUrB'JUr?%J:N0#J:N0"It)rtIt)orI
+XZ`pIXQWmI=6NlI!g<hI!g<gH[C*dH[C*cH?sm`H?sm`H?sj^H$O[\H$O[\H$O[\H$O[\H$O[\G^+I
+XG^+IXJqAT+JqAT+JUrB'JUrB'JUrB&J:N0#J:N-!It)rtIsuiqIXZ`pI=6NlI=6KjI!g<hI!g9fH[
+C*dH[C*cH?sm`H?sm`H?sm_H$O[\H$O[\H$O[\H$O[\H$O[\H$O[\JqAT+JqAT+JqAT+JqAT*JUrB'
+JUrB&J:N0#J:N-!It)rtIXZ`pIXZ]nI=6NlI=-EiI!g<hI!^3eH[C*dH[C'bH?sm`H?sm`H?sm`H?j
+d]H$O[\H$O[\H$O[\H$O[\K7ef/K7ef/K7ef.JqAT+JqAT+JUrB'JUr?%J:N0#J:E&uIt)rsIXZ`pI
+XQWmI=6NlI!g<hI!g<hH[C*dH[C*dH[C'bH?sm`H?sm`H?sm`H?sm`H?jd]H$O[\H$O[\KS5#3K7ef
+/K7ef/K7ef/JqAT+JqAT*JUrB'JUi9$J:N0"It)rtIsuiqIXZ`oI=6NlI=6KjI!g<hI!g<gH[C*dH[
+C*dH[C'bH?sm`H?sm`H?sm`H?sm`H?sm`H?sm`KS5#3KS5#3KS5#3KS+o0K7ef/JqAT+JqAT*JUrB'
+J:N0#J:N-!It)rtIXZ`pIXZ]nI=6NlI=-EiI!g<hI!g9fH[C*dH[C*dH[C*cH?sm`H?sm`H?sm`H?s
+m`H?sm`KnY57KnY57KnP,4KS5#3KS+o0K7ef/JqAT+Jq8K(JUrB&J:N0#It)rtIt)orIXZ`pI=6NlI
+=6NlI!g<hI!g<hI!^3eH[C*dH[C*dH[C*dH[C'bH?sm`H?sm`H?sm`L4t>8KnY57KnY57KnY56KS5#
+3KS+o0K7ef.JqAT+JUrB'JUi9$J:N-!It)rtIXZ`pIXZ`oI=6NlI=6NkI!g<hI!g<hI!^3eH[C*dH[
+C*dH[C*dH[C*dH[C*dH[C*dL5(G;L5(G;L5(G:KnY57KnY56KS5#3K7ef/K7\],JqAQ)JUrB&J:N0#
+J:E&uIt)orIXZ`pIXQWmI=6NlI=6KjI!g<hI!g<hI!g9fH[C*dH[C*dH[C*dH[C*dH[C*dLPLY?LPL
+Y?L5(G;L5(G;KnY57KnY25KS5#2K7ef/JqAT+JUrB'JUi9$J:N0"It)rtIsuiqIXZ`pI=6NlI=6NlI
+=-EiI!g<hI!g<hI!g<gH[C*dH[C*dH[C*dH[C*dLkphALPLY?LPLY?LPLV=L5(G;KnY57KnP,4KS+o
+0K7ec-JqAT*JUrB&J:N0#J:E&uIt)rsIXZ`pIXZ]nI=6NlI=6NlI!g<hI!g<hI!g<hI!g<hI!g<hH[
+C*dH[C*dLkpkCLkpkCLkpkBLPLY?LPCP<L5(G:KnY56KS5#3K7ef/JqAT+Jq8K(JUi9$J:N0"It)rt
+IsuiqIXZ`pIXQWmI=6NlI=6NlI!g<hI!g<hI!g<hI!g<hI!g<hI!g<hM2@(GM2@(GLkpkCLkpkBLPL
+Y?LPCP<L4t>8KnP,4KS4u1K7ec-JqAQ)JUrB&J:N0#J:E&uIt)rsIXZ`pIXZ`pI=6NlI=6NlI=6NlI
+=-EiI!g<hI!g<hI!g<hI!g<hMMd:KMM[1HM2@(GM26tDLkpkBLPLY>L5(G:KnY56KS5#2K7ef/JqAT
++JUrB'JUi9$J:N0"It)rtIt)orIXZ`pIXZ`oI=6NlI=6NlI=6NlI=6NkI!g<hI!g<hI!g<hMMd:KMM
+d:KMMd:JM2@(GM26tDLkgb@LPCP<L4t>8KnP,4KS+o0K7\],JqAQ)JUrB&J:N0#J:E&uIt)rtIXZ`p
+IXZ`pIXZ]nI=6NlI=6NlI=6NlI=6NlI=6NlI=6NlMi3LOMi3LOMi*CLMMd:JM2@(GLkpkCLPLY?L5(
+G:KnY56KS5#2K7ef.JqAT+JUrB'JUi9$J:N0"It)rtIt)orIXZ`pIXZ`pIXZ]nI=6NlI=6NlI=6NlI
+=6NlI=6NlN/W^SN/W^RMi3LOMi3IMMMd7IM2@%ELkphALPCP<L4t>8KnP,4K7ef/K7\],Jq8K(JUr?
+%J:N0#J:E&uIt)rtIsuiqIXZ`pIXZ`pIXZ`oI=6NlI=6NlI=6NlI=6NlNK&pWNJrgTN/W^SMi3LOMi
+*CLMM[1HLkpkCLPLY>L5(G:KnY25KS4u1K7ec-JqAT*JUrB'J:N0#J:N0"It)rtIt)rtIXZ`pIXZ`p
+IXZ`pIXZ`pIXZ]nI=6NlI=6NlNfK*YNK&pWNK&pVN/W^SMi3LNMMd:JM2@%ELkgb@LPCP<KnY57KS5
+#2K7ef/JqAT+JUrB'JUr?%J:N0#J:E&uIt)rtIt)rsIXZ`pIXZ`pIXZ`pIXZ`pIXZ`pIXZ`pNfK-[N
+fK-[NfK*YNK&mUN/W[QMi3IMMM[1HLkpkBLPLV=L5(D9KnP,4KS+o0K7\],JqAQ)JUrB'J:N0#J:N0
+"It)rtIt)rtIt)rsIXZ`pIXZ`pIXZ`pIXZ`pIXZ`pO,o?_O,o?_NfK-[NfB$XNJrgTMi3LOMMd:JM2
+@%ELkgb@L5(G:KnY25KS4u1K7ec-JqAT*JUrB'JUr?%J:N0#J:N-!It)rtIt)rtIt)rtIsuiqIXZ`p
+IXZ`pIXZ`pOH>QcOH>QbO,o?_NfK-[NK&pVN/W[QMi*CLM2@(FLkphALPCP<KnY57KS5#2K7ef/JqA
+T+Jq8K(JUrB&J:N0#J:N0#J:E&uIt)rtIt)rtIt)rtIt)rtIt)orIXZ`pOcbcgOcb`eOH>QcO,o?^N
+fK*YNJrgTMi3LNMMd7ILkpkBLPLV=L4t>8KnP,4KS+o0K7\],JqAT*JUrB'JUi9$J:N0#J:N0#It)r
+tIt)rtIt)rtIt)rtIt)rtIt)rtP*1ukP*1riOcbcfOH>NaO,o<]NK&pVN/W[QMMd:JM2@%ELPLY>L5
+(D9KnY25KS4u1K7ec-JqAT+JUrB'JUrB'J:N0#J:N0#J:N0#It)rtIt)rtIt)rtIt)rtIt)rtPEV2o
+PEM)lP*1riOcb`eOH5H`NfK*YNJrgSMi3IMM2@(FLkgb@L5(G;KnY56KS5#2K7ef/JqAT+JqAQ)JUr
+B'JUr?%J:N0#J:N0#J:N0#J:E&uIt)rtIt)rtIt)rtPa%DsP`q;pPEV/mP*(lhOH>QbO,f6\NK&mUM
+i3LNMM[1HLkphALPCP<L4t>8KS5#3K7ef/K7\],JqAT*JUrB'JUrB'JUi9$J:N0#J:N0#J:N0#J:N0
+#J:N0#J:E&uQ'IW"Q'@MtPa%AqPEM)lOcb`eOH5H_NfB$WN/W[QMMd7IM26tCLPLV=L5(D9KnP,4KS
++o0K7ec-JqAT+Jq8K(JUrB'JUrB'J:N0#J:N0#J:N0#J:N0#J:N0#J:N0#QBmi&QBd`#Q'@MtP`q;o
+P*1riOH>NaNfK*YN/W^RMi*CKM2@%ELPLY>L5(D9KnY25KS4u1K7ef/JqAT+JqAT*JUrB'JUrB'JUr
+B&J:N0#J:N0#J:N0#J:N0#J:N0#Q^=&*Q^3r'QBd`#Pa%DrPEM)kOcYZcO,f6[NK&mUMi3IMM2@(FL
+kgb@L5(G:KnY56KS5#3K7ef/K7\],JqAT+Jq8K(JUrB'JUrB'JUrB'JUi9$J:N0#J:N0#J:N0#R$a8
+.R$a5,Q^3r'Q'IW!P`q;oP*(lgOH5H_NK&mUN/NUOMM[1GLkphALPCP<KnY57KS5#3KS+o0K7ef.Jq
+AT+JqAT+JUrB'JUrB'JUrB'JUrB'JUrB'JUrB'JUr?%R@0J2R@0G0R$a5,QBmf$Pa%AqP*1riOH>Na
+NfB$WN/NUOMMd7ILkpkBLPLV=L4t>8KnP,4KS4u1K7ef/JqAT+JqAT+JqAQ)JUrB'JUrB'JUrB'JUr
+B'JUrB'JUrB'R[T\6R[T\5R@0G0Q^=#(Q'ISuPEV/lOcYZcO,f3ZN/W[QMMd7IM26tCLPLV=L5(D9K
+nY25KS5#2K7ef/K7ec-JqAT+JqAT+JqAQ)JUrB'JUrB'JUrB'JUrB'JUrB'S=H+=S"#n9R[TY4R$a5
+,QBmf#P`q;oOcb`eO,f6[NJrgSMi*CKM26tDLPLY>L5(D9KnY56KS5#3K7ef/K7ef/JqAT+JqAT+Jq
+AT+JqAT*JUrB'JUrB'JUrB'JUrB'SXl=BS=H+>S"#k8R@0G0Q^=#'Q'@JrP*(lgO,o<]NK&mUMi3IM
+M2@%ELkgb@L5(G:KnY56KS5#3KS+o0K7ef/K7ec-JqAT+JqAT+JqAT+JqAT+JqAT+JqAT*JUrB'St;
+OFSt;LDS=H+=R[TY4R$X/*Q'IStPEM&jOH5H_NK&mUMi3IMM2@(FLkgb@L5(G;KnY57KS5#3KS4u1K
+7ef/K7ef/JqAT+JqAT+JqAT+JqAT+JqAT+JqAT+JqAT+TV.sMT:_aISt2FBS=>t9R@'A.QBd`"PEV/
+lOH>N`NfB$WN/NUOMM[1GLkphALPCP<KnY57KnP,4KS5#3K7ef/K7ef/K7ef.JqAT+JqAT+JqAT+Jq
+AT+JqAT+JqAT+TqS0RTqJ'NT:_^GSXc1=R[KP1Q^3o%P`q8nOcYZcNfK*XN/NUOMM[1GLkphALPCP<
+L4t>8KnY25KS5#3KS+o0K7ef/K7ef/K7ef/JqAT+JqAT+JqAT+JqAT+JqAT+USFQXU8"?TTV.pLSt2
+FBS!ob5R$X,(Pa%ApOcb`dO,f3ZN/NUOMM[1HLkpkBLPLV=L5(D9KnY56KS5#3KS5#2K7ef/K7ef/K
+7ef/K7ef/K7ef/K7ec-JqAT+JqAT+Unjf^Una]ZU7n9RT:VXFS=>t8R@'>,Q'@JrP*(ifO,f3ZN/W[
+QMMd7ILkpkBLPLV=L5(D9KnY57KS5#3KS5#3K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/VP
+^5fV59u`USFQWTV.pKSXc1<R@'>-QBd\uP*(lgO,f6[N/W[QMMd7ILkpkBLPLV=L5(G:KnY57KS5#3
+KS5#3KS5#2K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/W2QYmVl-DgV50l]U7n6PSt2C@R[KP0QBd
+\uPEM&iO,o<\NJrdRMMd7IM26tCLPLY>L5(G:KnY57KnP,4KS5#3KS5#3KS4u1K7ef/K7ef/K7ef/K
+7ef/K7ef/K7ef/WiE%tWMlbnVP^2cUS=HTT:VUDS!ob4Q^3o$PEM&iOH5E]NJrgSMMd7IM26tDLPLY
+>L5(G:KnY57KnY25KS5#3KS5#3KS5#3KS5#3KS+o0K7ef/K7ef/K7ef/K7ef/XK8J'X/`2!W2HPjV5
+0iZTV%gHS=>q6Q^3o$PEM&jOH5E^NJrgSMMd:JM26tDLPLY>L5(G;KnY57KnY56KS5#3KS5#3KS5#3
+KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3Y-+n/XfSV)Wi;qpVPU)`TqJ$LSXZ(9R$X,(P`q8mOH5E^NJr
+gSMi*CKM26tDLPLY>L5(G;KnY57KnY57KnP,4KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3Y
+ct@8YHG%1XK/A#W2?DeUS4?QSXc1<R$X,(P`q8mOH5E^NJrgSMi*CKM26tDLPLY>L5(G;KnY57KnY5
+7KnY25KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3ZEgdAZ*:I9Y-"e*WMl_kUnXQUSt2@>R@
+';*P`q8mOH5E^NJrgSMMd7IM26tDLPLY>L5(G;L4t>8KnY57KnY57KnP,4KS5#3KS5#3KS5#3KS5#3
+KS5#3KS5#3KS5#3[C*BKZa6sBYck42X/W%qV5'cXT:MLAR@'>+P`q8mOH5E^NJrgSMMd7IM26tCLPL
+Y>L5(G;L4t>8KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57\@8rV[^EKKZE^X:X
+fJG"VPU&]TUq^DR[BG-P`q8mOH5E^NJrdRMMd7ILkpkBLPLY>L5(G;L4t>8KnY57KnY57KnY57KnY5
+7KnY57KnY57KnY57KnY57KnY57KnY57]"5J`\[],W['R'BY-"b(W2?AbTq@mGR[KM.Q'7AnOH5E^NJ
+rdRMMd7ILkpkBLPLY>L5(G;L4t>8KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57
+^:h4m]Xtbb\$`TKYck10WMcSfTq@pHR[KM.Q'7AnOH5E]NJrdRMM[1HLkphALPLV=L5(G;L4t>8KnY
+57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57_83q&^V7Cn]"#2UZEUL5Wi2ejU7e*JS
+!fY0Q'7AnOH5E]N/W[PMM[1GLkphALPLV=L5(G;L4t>8KnY57KnY57KnY57KnY57KnY57KnY57KnY5
+7KnY57KnY58L5(G;`Pf^4_SO%%]Xt_`['Hp=X/W"nUS4<NS!fY0Q'7AnOH5E]N/NUOM2@(FLkgb@LP
+CP<L5(G;KnY57KnY57KnY57KnY57KnY57KnY57Knb>:L5(G;L5(G;L5(G;L5(G;aN2HC`l5j3^V.7i
+\$WHEXfA=sUS4<NS!fY0P`q8lO,f3ZN/NRNM2@%ELPLY?L5(G;L5(G:KnY57KnY57KnY57KnY57KnY
+89L5(G;L5(G;L5(G;L5(G;L5(G;L5(G;c-4DTb/hWB_na"!\[JlMY,eP!UnXKPS!fV/P`q5kO,f3YM
+i3ILM26tDLPLY>L5(G;L5(D9KnY57KnY57KnY57KnY89L5(G;L5(G;L5(G;L5(G;L5(G;L5(G;L5(G
+;dF$=ecHOJQ`l,^-]=>8SYcXq'UnXNQS!fV.P`h/jO,]*WMi*@JLkpkBLPLV=L5(G;KnY57KnY57Kn
+Y57KnY58L5(G;L5(G;L5(G;L5(G;L5(G;L5(G;L5(G;L5(G<f%/C$e'ZLcb/_H:^:Uk]Z*(.+V4sWR
+S!fV.PEM#gNfB!UMMd7HLkgb@L5(G;L5(D9KnY57KnY57KnY57KnY89L5(G;L5(G;L5(G;L5(G;L5(
+J=LPLY?LPLY?LPLY?gt^Z;f[eO!cHF;I_7dCfZEL@.V4sWRS!fS-PECrfNJrdQMM[.FLPLY>L5(G;K
+nY57KnY57KnY57KnY57L5(G;L5(G;L5(G;L5(G;L51P>LPLY?LPLY?LPLY?LPLY?io8qSh:pT4da-+
+W_nWgm['6X2VP9`SR[BD*P*(fcNJrdQM26tCLPCP<L4t>8KnY57KnY57KnY57KnY57L5(G;L5(G;L5
+(G;L51P>LPLY?LPLY?LPLY?LPLY?LPLY?l0.<mj5JkLf@/'h`koF"[BZj5VP9]QR[9;'OcYT_N/NRM
+LkphAL5(G:KnY57KnY57KnY57KnY57KnY58L5(G;L5(G;L5(G<LPLY?LPLY?LPLY?LPLY?LPLY?LPU
+bBnF5o6lK@6dgt:*$ai)!,[^*$7VP9]QR?s/$OH5B[Mi*@ILPLV=L4t>8KnY25KS5#3KnY57KnY57K
+nY58L5(G;L5(G;L51P>LPLY?LPLY?LPLY@LkpkCLkpkCLkpkCq"XUVna>])in`88c,[]6\$E0:V4sQ
+NR$NquO,f0WMM[.EL5(D9KnY25KS5#3KS5#3KS5&5KnY57KnY58L5(G;L5(G<LPLY?LPLY?LPLY@Lk
+pkCLkpkCLkpkCLkpkCs8W-!q=O4Fl/UUOd)s;@\?i?;V4jHKQ^!YpNf8mRLkph@KnY56KS5#3KS5#3
+KS5#3KS5#3KnY57KnY58L5(G;L5(J=LPLY?LPLY?LkpkCLkpkCLkpkCLkpkCLkpkCs8W-!s7uE`n`o
+/heBQ"J\[8N=UnF6GQBRGkN/NOKLPCP;KS5#2K7ef/K7ef/K7ei1KS5#3KnY57KnY89L5(G;L51P>L
+PLY?LPL\ALkpkCLkpkCLkpkCLl$tFM2@(Gs8W-!s7lQmqXWn.f?_OS]!SW>Un=-CP`_#dMi!7FL4t;
+6K7ef.JqAT+JqAW-K7ef/KS5#3KS>,6KnY89L5(G;LPLY?LPLY?LkpkCLkpkCLkpkDM2@(GM2@(GM2
+@(GziT^CBs8DEHg="-\]<n]=U7Rd=P)kT\M2-h>KS+o/JqAT*JUrE)JqAT+JqJ].K7no2KS>,6KnY8
+9L5(G;LPLY?LPL\ALkpkCLkpkDM2@(GM2@(GM2@(GM2@(Gzzo)JCDgssWd]<n];Tq%I5OH#0TLP:D6
+JqAQ)JUr?%JUrB'JUrE)JqAW-K7ei1KS5&5KnY89L5(G<LPLY?LPUbBLkpkCLl$tFM2@(GM2@(GM2@
+(GM2@(Gzz!!)`Lhq65n]X+Z8T:(t,NJiUIKS+l-J:N0"It)rtJ:N0#J:W9&JqAT,K7ei1KS5&5KnY8
+9L5(J=LPLY?LkpkCLkpkDM2@(GM2@(GM2@(HMMd:KMMd:Kzz!!!#5m,$.0]<\H2S<oD!Mhm(>Jq8H%
+IXZ`pIXZ`pIt)rtJ:N3%JV&K*K7ef0KS5&5KnY89L5(J=LPLY@LkpkCLl$tFM2@(GM2@+IMMd:KMMd
+:KMMd:Kzzz!9hqQ]<J3*R?N\iLP180IsufoI!g<hI!pEkIXZ`qIt3'"JUrE)JqJ]/KS5&5KnY89L51
+P>LPL\ALkpkDM2@(GM2@(HMMd:KMMd:KMMd:KMMd:Kzzz!!(Ee\ZV`uQ&giYK7SN#I!^3dH?sm`H[C
+-fI!pElIXcitJ:W9'JqJ].KS5&5Knb>:L51P>LPUbBLkpnEM2@(GM2I1JMMd:KMMd:KMMmCNMi3LOz
+zz!!!#B\#H!dOc+sGIslZiH$FRYG^+IYH$Xd`H[L6iIXZcsJ:W9'JqJ].KS5&5Knb>:LPLY?LkpkCL
+l$tFM2@(HMMd:KMMd:KMi3LOMi3LOMi3LOzzzz[%`tOMhZe2H[0gYF`hhLF`qqPG^+L[H@($fI=?Zq
+J:N3%JqAW-KS5&5Knb>:LPLY@LkpkCM2@(GM2I1JMMd:KMi3LOMi3LOMi3LOMi3LOzzzzL6[s]L4FY
+rG'%eGEcQ2@F*)MHG'A1VH$XgbI=6QoIt3*$JqAW-KS5&5Knb>;LPLY@LkpkDM2@(HMMd:KMMd=MMi
+3LOMi3LOMi3OQN/W^Szzzz!1At)J9l?YE,TW3DJjB3E,fo>F`qtRH$O^_I!pHmIt3'#JqAW-KS5&5L
+5(G<LPL\ALkpnEM2@+IMMd:KMi3LOMi3LON/W^SN/W^SN/W^Szzzz!!&16H#mk>C2%BrC27X&DJsN8
+F*)PKG^4U^I!g?kIt3'#JqAW-KS5&5L5(G<LPUbBLl$tFM2I1JMMd=MMi3LOMi<URN/W^SN/W^SN/W
+^Szzzz!!%+aE,'#sA7K.]AnPgmCi+*0EcZ>GGBeCZH[L6jIt*!"JqAW-KS5&5L5(J=LPUbBM2@(GMM
+d:KMi3LOMi3OQN/W^SN/W^SN/WaUNK&pWzzzz!!!"CB45+P?!^lG@Us(`BkqR(E,p#BG'A4XH[L6jI
+t*!"JqAW-KS>,7L5(J=LkpkDM2@+IMMd:LMi3LON/W^SN/W^SNK&pWNK&pWNK&pWzzzz!!!"&=&r=$
+<`iL0?=78SB5)-uDfKf>Fa&(UH@1-iIXcm!JqAW.KS>,7L51P>LkpnEM2I1JMMmCNMi3OQN/W^SN/`
+gVNK&pWNK&pWNK&pWzzzz!!!!g8kViP:Jt.n>$YNGAS>gpDK'W;F`r"TH@($fIXcm!JqAW.KS>,7L5
+1P?Ll$tFMMd:KMi3LON/W^SN/WaUNK&pWNK&pWNK0$ZNfK-[zzzz!!!![5sdq-8PDrZ='Ap=@qKFjD
+/XE8FEVkRH@($fIXcm!JqJ]/KnY89LPL\ALl$tGMMd:LMi3LPN/W^SNK&pWNK&pWNfK-[NfK-[NfK-
+[zzzzz4ZPSf6:X^G<*3C4@V'4fCi=<6FEVkRH@($fIXcm!JqJ]/KnY89LPL\AM2@(HMMd=MMi<URN/
+WaUNK&pWNfK-[NfK-[NfK-[NfK-[zzzzz.kNM84[Vb7;H?t-@:X"cCi434FEVkRH@($gIt3*$JqJ`0
+Knb>;LPUbCM2@+IMi3LON/W^SNK&pWNK0$ZNfK-[NfK0]O,o?_O,o?_zzzzz*@!$h3Bor*:fUY(?t<
+k`Ci434FEVkRH@('hIt3*%JqJ`1KnbA<LkpnEM2I1KMi3OQN/WaUNK&pXNfK-[NfK0]O,o?_O,o?_O
+,o?_zzzzz&fW,L2EaH#:K1G$?t3e_Ci434FEVnSH@1-iIt3*%K7no3L5(J=LkpnEMMd=MMi<URN/`g
+VNK0$ZNfK-\O,o?_O,o?_O,oBaOH>Qczzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz~>
+InterpretLevel1 not {
+  grestore
+} if
+grestore
+%%%%EndImage
+% End plot #1
+% Begin plot #2
+1.000 UL
+LTb
+0.58 0.00 0.83 C /Helvetica findfont 200 scalefont setfont
+%%%%BeginImage
+gsave 1385 4799 N 1385 840 L 5344 840 L 5344 4799 L Z clip
+InterpretLevel1 {
+  %% Construct a box instead of image
+  LTb
+  1385 4819 M
+  1980 0 V
+  0 -3979 V
+  -1980 0 V
+  1385 4819 L
+  40 -110 R
+  (PS level 2 image) Lshow
+  % Read data but ignore it
+  /imagebuf 24144 string def
+  currentfile imagebuf readstring
+} {
+gsave
+1385 4819 translate
+1980 -3979 scale
+%%%%BeginPalette
+[ /Indexed
+  /DeviceRGB 255
+  <
+   8000ff 7e03ff 7c06ff 7a09ff 780dff 7610ff 7413ff 7216ff
+   7019ff 6e1cff 6c1fff 6a22fe 6826fe 6629fe 642cfe 622ffe
+   6032fe 5e35fe 5c38fd 5a3bfd 583efd 5641fd 5444fd 5247fc
+   504afc 4e4dfc 4c50fc 4a53fb 4856fb 4659fb 445cfb 425ffa
+   4062fa 3e65fa 3c68f9 396bf9 386df9 3670f8 3473f8 3176f8
+   3079f7 2e7bf7 2c7ef7 2981f6 2884f6 2686f5 2489f5 218cf4
+   208ef4 1e91f3 1c93f3 1996f3 1898f2 169bf2 149df1 11a0f1
+   10a2f0 0ea5ef 0ca7ef 09a9ee 08acee 06aeed 04b0ed 01b3ec
+   00b5eb 02b7eb 04b9ea 07bbea 08bee9 0ac0e8 0dc2e8 0fc4e7
+   10c6e6 12c8e6 14cae5 17cbe4 18cde4 1acfe3 1dd1e2 1fd3e1
+   21d5e1 22d6e0 24d8df 27dade 29dbde 2adddd 2ddedc 2fe0db
+   31e1da 32e3da 34e4d9 37e6d8 39e7d7 3ae8d6 3dead5 3febd5
+   41ecd4 42edd3 44eed2 47efd1 49f1d0 4af2cf 4df3ce 4ff3cd
+   51f4cc 52f5cb 54f6cb 57f7ca 59f8c9 5af8c8 5df9c7 5ffac6
+   61fac5 62fbc4 64fbc3 67fcc2 69fcc1 6afdc0 6dfdbf 6ffebe
+   71febc 72febb 74feba 77ffb9 79ffb8 7affb7 7dffb6 7fffb5
+   81ffb4 83ffb3 84ffb2 86ffb0 88ffaf 8bfeae 8dfead 8ffeac
+   91feab 93fda9 94fda8 96fca7 99fca6 9bfba5 9dfba4 9ffaa2
+   a1faa1 a3f9a0 a4f89f a6f89d a8f79c abf69b adf59a aff498
+   b1f397 b3f396 b4f295 b6f193 b9ef92 bbee91 bded8f bfec8e
+   c1eb8d c3ea8c c4e88a c6e789 c8e688 cbe486 cde385 cfe184
+   d1e082 d3de81 d4dd80 d6db7e d9da7d dbd87b ddd67a dfd579
+   e1d377 e3d176 e4cf74 e6cd73 e8cb72 ebca70 edc86f efc66d
+   f1c46c f3c26b f4c069 f6be68 f9bb66 fbb965 fdb763 ffb562
+   ffb360 ffb05f ffae5e ffac5c ffa95b ffa759 ffa558 ffa256
+   ffa055 ff9d53 ff9b52 ff9850 ff964f ff934d ff914c ff8e4a
+   ff8c49 ff8947 ff8646 ff8444 ff8143 ff7e41 ff7b40 ff793e
+   ff763d ff733b ff703a ff6d38 ff6b37 ff6835 ff6533 ff6232
+   ff5f30 ff5c2f ff592d ff562c ff532a ff5029 ff4d27 ff4a26
+   ff4724 ff4422 ff4121 ff3e1f ff3b1e ff381c ff351b ff3219
+   ff2f18 ff2c16 ff2914 ff2613 ff2211 ff1f10 ff1c0e ff190d
+   ff160b ff1309 ff1008 ff0d06 ff0905 ff0603 ff0302 ff0000
+  >
+] setcolorspace
+%%%%EndPalette
+<<
+  /ImageType 1
+  /Width 100
+  /Height 201
+  /BitsPerComponent 8
+  /ImageMatrix [ 100 0 0 201 0 0 ]
+  /Decode [ 0 255 ]
+  /DataSource currentfile /ASCII85Decode filter
+  /MultipleDataSources false
+  /Interpolate false
+>>
+image
+} ifelse
+;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?
+Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;
+c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?U
+n;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Un;c?Uo<)cgr<)cgr<)
+cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr
+<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)c
+gr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<
+)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cg
+r<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<)cgr<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E
+3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!
+<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3
+%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<
+E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%!<E3%
+!<E<.$<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`
+W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%
+<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W
+7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<`W7%<
+`W7%<`W7%<`W:'='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I
+)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='
+&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)
+='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&
+I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)='&I)=BJ[-=BJ[-=BJ[-=BJ[-=
+BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[
+-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=B
+J[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-
+=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ
+[-=BJ[-=BJ[-=BJ[-=BJ[-=BJ[-=BSd0=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=
+]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm
+1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]
+nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1
+=]nm1=]nm1=]nm1=^#!4>$>*5>$>*5>$>*5=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=]nm1=^#
+!4>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>
+$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*
+5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$
+>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>*5>$>-7>?b<9>?b<9>?b<9>?b<9
+>?b<9>?b<9>?b<9>?b<9>$>*5>$>*5>$>*5>$>*5>$>*5>$G38>?b<9>?b<9>?b<9>?b<9>?b<9>?b
+<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>
+?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<
+9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?b<9>?
+b<9>?b<9>?b<9>?b<9>?b<9>?b?;>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=
+>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1
+N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>
+[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N
+=>[:W@?!U`A?!U`A?!U`A>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N=>[1N>?!
+U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A
+?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U
+`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?
+!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`B?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$r
+E?=$rE?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!U`A?!^iD?=$rE?=$rE?=$rE?=$rE?=$rE?=
+$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE
+?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$
+rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?=$rE?
+=$rE?=$rE?=$rF?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?=$rE?=$r
+E?=$rE?=$rE?=$rE?=$rF?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?X
+I/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I
+?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?smAM?smAM?smAM?smAM?sm
+AM?smAM?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI/I?XI2K?smAM?smAM?
+smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?XI/I?XI/J?smAM?smAM?smA
+M?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?s
+mAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?smAM
+?smAM?smAM?smAM?smAM?smAN@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ?smAM?sm
+AM?smAM?smAM?smAM?smAM?smAM?smAM?smAM?t!JP@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@
+:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<S
+Q@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<VS@U`eU@U`eU@U
+`eU@U`eU@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:<SQ@:E\T
+@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@:<SQ@:<SQ@:<SQ@:<SQ@:<
+SQ@:<SQ@:<SQ@:E\T@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@
+U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`e
+U@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@U`eU@U
+`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@U`eU@UinX@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y
+@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@U`eU@U`eU@U`eU@U`eU@U`eV@q0"Y@q0"Y@q0
+"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"YA7T4]A7T4]A
+7T4]A7T4]@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0"
+Y@q0%[A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]@q0"Y@q0"Y@q0"Y@q0"Y@q
+0"Y@q0"Y@q0"Y@q0"Y@q0"Y@q0%[A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]
+A7T4]A7T4]A7T4]A7T4]A7T4]@q0"ZA7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T
+4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T7_AS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaA7T4]A
+7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T7_AS#FaAS#FaAS#FaAS#F
+aAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaA7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7T4]A7
+T7_AS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FbAnGXeAnGXe
+AnGXeAnGXeAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#
+FaAS#FaAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAS#FaAS#FaAS#FaAS#FaA
+S#FaAS#FaAS#FaAS#FaAS#FaAS#FaAS#FbAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGX
+eAnGXeAnGXeAnGXeAnGXeAnGXeAS#FaAS#FaAS#FaAS#FaAS#FaAS#FbAnGXeAnGXeAnGXeAnGXeAn
+GXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnG[gB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiAnGXe
+AnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnPahB4kjiB4kjiB4k
+jiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeAnGXeA
+nGXeAnGXeAnPahB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiBP;'mBP;'mBP;'
+mBP;'mBP;'mAnGXeAnGXeAnGXeAnGXfB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4
+kjiB4kjiB4tslBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mB4kjiB4kjiB4kjiB4kji
+B4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjjBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;
+'mBP;'mBP;'mBP;'mBP;'mBP;'mB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjiB4kjjBP;'mBP;'mB
+P;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBPD0pBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBP;'
+mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;*oBk_9qBk_9qBk
+_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBP;'m
+BP;'mBP;'mBP;'mBPD0pBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBkhBtC2.KuC2.KuC2.
+KuC2.KuC2.KuBP;'mBP;'mBP;'mBP;'mBP;'mBP;'mBPD0pBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qB
+k_9qBk_9qBkhBtC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuBk_9qBk_9qBk_9qBk_9
+qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBkhBtC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2
+.KuC2.KuC2.O"CMR^$CMR^$CMR^$Bk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qBk_9qC2.Ku
+C2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuCMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$Bk_
+9qBk_9qBk_9qBk_9qBk_9rC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.L!CMR^$CMR^$C
+MR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$C2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.K
+uC2.KuC2.KuC2.KuC2.KuCMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMRa&Ci!p(Ci!p(Ci!p(Ci
+!p(Ci!p(Ci!p(C2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.KuC2.L!CMR^$CMR^$CMR^$CMR^$CMR^$
+CMR^$CMR^$CM[g'Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(C2.KuC2.KuC2.KuC27
+U#CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMRa&Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(C
+i!p(D/F-,D/F-,D/F-,D/F-,D/F-,CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^
+%Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!s*D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,CM
+R^$CMR^$CMR^$CMR^$CMR^$CMR^$CMR^%Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p)D/F-,D/F-,
+D/F-,D/F-,D/F-,D/F-,D/F-,D/F0.DJj?0DJj?0DJj?0CMR^%Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!
+p(Ci!p(Ci!p(Ci!p(Ci!p(Ci+$+D/F-,D/F-,D/F-,D/F-,D/F-,D/F--DJj?0DJj?0DJj?0DJj?0D
+Jj?0DJj?0DJj?0Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p(Ci!p)D/F-,D/F-,D/F-,D/F-
+,D/F-,D/F-,DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJjB2Df9Q4Ci!p(Ci!p(Ci!p(Ci
+!p(Ci!p(Ci!p)D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F--DJj?0DJj?0DJj?0DJj?0DJj?0DJj?1
+Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F
+-,D/O6/DJj?0DJj?0DJj?0DJj?0DJj?0Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4D
+/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F-,D/F--DJj?0DJj?0DJj?0DJj?0DJj?0DJj?1Df9Q4Df9Q
+4Df9Q4Df9Q4Df9Q4Df9Q5E,]c8E,]c8E,]c8E,]c8E,]c8D/F-,D/F-,D/F-,D/F-,D/F--DJj?0DJ
+j?0DJj?0DJj?0DJj?0DJj?0DJj?1Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4E,]c8E,]c8E,]c8E,]c8E,]c8
+E,]c8E,]c8E,]c8DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJj?0DJjB2Df9Q4Df9Q4Df9
+Q4Df9Q4Df9Q5E,]c8E,]c8E,]c8E,]c8E,]c8E,]c9EH,u<EH,u<EH,u<EH,u<DJj?0DJj?0DJj?0D
+Jj?0DJj?0DJj?0DJj?0Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q5E,]c8E,]c8E,]c8E,]c8E,]c9EH,u
+<EH,u<EH,u<EH,u<EH,u<EH,u<EH,u<DJj?0DJj?0DJj?0DJj?1Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df
+9Q4Df9Q5E,]c8E,]c8E,]c8E,]c8E,]f:EH,u<EH,u<EH,u<EH,u<EH,u<EH-#>EcQ2@EcQ2@EcQ2@
+Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q5E,]c8E,]c8E,]c8E,]c8E,]c9EH,u<EH,
+u<EH,u<EH,u<EH-#>EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4Df9Q4D
+fBZ7E,]c8E,]c8E,]c8E,]c8E,]c9EH,u<EH,u<EH,u<EH,u<EH6)?EcQ2@EcQ2@EcQ2@EcQ2@EcQ2
+@EcQ5BF)uDDF)uDDDf9Q4Df9Q4Df9Q5E,]c8E,]c8E,]c8E,]c8E,]c8E,]c8E,]c8EH,u<EH,u<EH
+,u<EH,u<EH-#>EcQ2@EcQ2@EcQ2@EcQ2@F)uDDF)uDDF)uDDF)uDDF)uDDF)uDDE,]c8E,]c8E,]c8
+E,]c8E,]c8E,]c8E,]c8E,]c8EH,u<EH,u<EH,u<EH,u<EH,u=EcQ2@EcQ2@EcQ2@EcQ2@F)uDDF)u
+DDF)uDDF)uDDF)uDDF)uDDF*)MGFEDVHE,]c8E,]c8E,]c8E,]c8E,]c8E,]c9EH,u<EH,u<EH,u<E
+H,u<EH,u<EcQ2@EcQ2@EcQ2@EcQ2@EcZ;CF)uDDF)uDDF)uDDF)uDEFEDVHFEDVHFEDVHFEDVHFEDV
+HE,]c8E,]c9EH,u<EH,u<EH,u<EH,u<EH,u<EH,u<EH,u<EH-#>EcQ2@EcQ2@EcQ2@EcQ5BF)uDDF)
+uDDF)uDDF)uGFFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHEH,u<EH,u<EH,u<EH,u<EH,u<EH,u<
+EH,u<EH-#>EcQ2@EcQ2@EcQ2@EcQ2@F)uDDF)uDDF)uDDF)uDEFEDVHFEDVHFEDVHFEDVHF`hhLF`h
+hLF`hhLF`hhLF`hhLEH,u<EH,u<EH,u<EH,u<EH,u<EH6)?EcQ2@EcQ2@EcQ2@EcQ2@EcQ5BF)uDDF
+)uDDF)uDDF*)MGFEDVHFEDVHFEDVHF`hhLF`hhLF`hhLF`hhLF`hhLF`hhLF`hhLEcQ2@EcQ2@EcQ2
+@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2AF)uDDF)uDDF)uDDF)uDEFEDVHFEDVHFEDVHFEM_KF`hhLF`
+hhLF`hhLF`hkNG'8%PG'8%PG'8%PG'8%PEcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@EcQ2@F)uDDF)uDD
+F)uDDF)uDDF*)MGFEDVHFEDVHFEDVIF`hhLF`hhLF`hhLF`hkNG'8%PG'8%PG'8%PG'8%PG'8%PG'8
+%PEcQ2@EcQ2@EcQ2@EcQ2@EcQ2AF)uDDF)uDDF)uDDF)uDDF)uDDFEDVHFEDVHFEDVHFEDYJF`hhLF
+`hhLF`hhMG'8%PG'8%PG'8%PG'8%QGB\7TGB\7TGB\7TGB\7TF)uDDF)uDDF)uDDF)uDDF)uDDF)uD
+DF)uDDF)uDDF*)MGFEDVHFEDVHFEDVHFEM_KF`hhLF`hhLF`qqOG'8%PG'8%PG'8%QGB\7TGB\7TGB
+\7TGB\7TGB\7TGB\7TF)uDDF)uDDF)uDDF)uDDF)uDDF)uDDF)uDEFEDVHFEDVHFEDVHFEDVIF`hhL
+F`hhLF`hhLG'8%PG'8%PG'8%PG'A.SGB\7TGB\7TGB\7TG^+IXG^+IXG^+IXG^+IXF)uDDF)uDDF)u
+DDF)uDDF)uGFFEDVHFEDVHFEDVHFEDVHFEDYJF`hhLF`hhLF`hhMG'8%PG'8%PG'8%QGB\7TGB\7TG
+B\7TG^+IXG^+IXG^+IXG^+IXG^+IXG^+IXFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFEDVHF`hh
+LF`hhLF`hhLF`hkNG'8%PG'8%PG'8(RGB\7TGB\7TGB\:VG^+IXG^+IXG^+IXH$O[\H$O[\H$O[\H$
+O[\FEDVHFEDVHFEDVHFEDVHFEDVHFEDVHFEM_KF`hhLF`hhLF`hhLF`hkNG'8%PG'8%PG'8(RGB\7T
+GB\7TGBe@WG^+IXG^+IXG^4R[H$O[\H$O[\H$O[\H$O[\H$O[\FEDVHFEDVHFEDVHFEDVHFEM_KF`h
+hLF`hhLF`hhLF`hhLG'8%PG'8%PG'8%PG'A.SGB\7TGB\7TG^+IXG^+IXG^+IYH$O[\H$O[\H$O[\H
+$Xd_H?sm`H?sm`H?sm`F`hhLF`hhLF`hhLF`hhLF`hhLF`hhLF`hhLF`hhMG'8%PG'8%PG'8%PG'A.
+SGB\7TGB\7TG^+IXG^+IXG^+LZH$O[\H$O[\H$Xd_H?sm`H?sm`H?sm`H?sm`H?sm`F`hhLF`hhLF`
+hhLF`hhLF`hhLF`hhLF`qqOG'8%PG'8%PG'8%PGB\7TGB\7TGB\7UG^+IXG^+IXG^+LZH$O[\H$O[\
+H?sm`H?sm`H?sm`H[C*dH[C*dH[C*dH[C*dF`hhLF`hhLF`hhLF`hhLF`qqOG'8%PG'8%PG'8%PG'8
+%QGB\7TGB\7TGB\7UG^+IXG^+IXG^4R[H$O[\H$O[]H?sm`H?sm`H?spbH[C*dH[C*dH[C*dH[C*dI
+!g<hG'8%PG'8%PG'8%PG'8%PG'8%PG'8%PG'8%PG'8(RGB\7TGB\7TGB\7UG^+IXG^+IXG^4R[H$O[
+\H$O[]H?sm`H?sm`H[C*dH[C*dH[C*dI!g<hI!g<hI!g<hI!g<hG'8%PG'8%PG'8%PG'8%PG'8%PG'
+8%PGB\7TGB\7TGB\7TGB\7UG^+IXG^+IXG^+LZH$O[\H$O[]H?sm`H?sm`H[C*dH[C*dH[C-fI!g<h
+I!g<hI!g<hI!g?jI=6NlG'8%PG'8%PG'8%PG'8%PG'A.SGB\7TGB\7TGB\7TGB\:VG^+IXG^+IXG^+
+LZH$O[\H$O[]H?sm`H?sm`H[C*dH[C*dH[L3gI!g<hI!g<hI=6NlI=6NlI=6NlI=6NlGB\7TGB\7TG
+B\7TGB\7TGB\7TGB\7TGB\7TGB\:VG^+IXG^+IXG^+LZH$O[\H$O[\H?sm`H?sm`H[C*dH[C*dH[L3
+gI!g<hI!g?jI=6NlI=6NlI=6NmIXZ`pIXZ`pGB\7TGB\7TGB\7TGB\7TGB\7TGB\7TG^+IXG^+IXG^
++IXG^+LZH$O[\H$O[\H?sm`H?sm`H@(!cH[C*dH[L3gI!g<hI!pEkI=6NlI=6NmIXZ`pIXZ`pIXZ`p
+IXZ`pGB\7TGB\7TGB\7TGB\7TGBe@WG^+IXG^+IXG^+IXG^+LZH$O[\H$O[\H$Xd_H?sm`H@(!cH[C
+*dH[L3gI!g<hI!pEkI=6NlI=6QnIXZ`pIXZ`pIXZcrIt)rtIt)rtGB\7TG^+IXG^+IXG^+IXG^+IXG
+^+IXG^+IXG^4R[H$O[\H$O[\H$Xd_H?sm`H?spbH[C*dH[C-fI!g<hI!g?jI=6NlI=6QnIXZ`pIXZ`
+qIt)rtIt)rtIt)rtIt)rtG^+IXG^+IXG^+IXG^+IXG^+IXG^+IXH$O[\H$O[\H$O[\H$O^^H?sm`H?
+smaH[C*dH[C*eI!g<hI!g?jI=6NlI=6QnIXZ`pIXZcrIt)rtIt)rtJ:N0#J:N0#J:N0#G^+IXG^+IX
+G^+IXG^+IXG^+LZH$O[\H$O[\H$O[\H$O^^H?sm`H?sm`H[C*dH[C*dI!g<hI!g<iI=6NlI=6QnIXZ
+`pIXZcrIt)rtIt*!!J:N0#J:N0#J:N0#JUrB'G^+IXG^+IXH$O[\H$O[\H$O[\H$O[\H$O[\H$O^^H
+?sm`H?sm`H@(!cH[C*dH[L3gI!g<hI=6NlI=6NmIXZ`pIXZcrIt)rtIt3'"J:N0#J:N3%JUrB'JUrB
+'JUrB'H$O[\H$O[\H$O[\H$O[\H$O[\H$O[\H$Xd_H?sm`H?sm`H@(!cH[C*dH[C-fI!g<hI!g?jI=
+6NlIXZ`pIXZ`qIt)rtIt*!!J:N0#J:W9&JUrB'JUrB'JqAT+JqAT+H$O[\H$O[\H$O[\H$O[\H$O[]
+H?sm`H?sm`H?sm`H?spbH[C*dH[C*eI!g<hI!g<iI=6NlI=6QnIXZ`pIt)rtIt*!!J:N0#J:W9&JUr
+B'JV&K*JqAT+JqAT+JqAT+H$O[\H$O[\H$O[]H?sm`H?sm`H?sm`H?sm`H?spbH[C*dH[C*dI!g<hI
+!g<hI=6NlI=6NmIXZ`pIXcisIt)ruJ:N0#J:N3%JUrB'JqAT+JqAT+JqJ].K7ef/K7ef/H?sm`H?sm
+`H?sm`H?sm`H?sm`H?sm`H?spbH[C*dH[C*dH[L3gI!g<hI!g?jI=6NlI=?WoIXZ`qIt)rtIt3'"J:
+N0$JUrB'JV&K*JqAT+K7ef/K7ef/K7ef/KS5#3H?sm`H?sm`H?sm`H?sm`H?sm`H@(!cH[C*dH[C*d
+H[C-fI!g<hI!g<iI=6NlI=6QnIXZ`pIt)rtIt*!!J:N0#JUrB'JV&K*JqAT+K7ef/K7ef0KS5#3KS5
+#3KS5#3H?sm`H?sm`H?sm`H?spbH[C*dH[C*dH[C*dH[C*eI!g<hI!g<hI=6NlI=6NlIXZ`pIXZcrI
+t)rtJ:N0#J:W9&JUrB(JqAT+K7ef/K7ef0KS5#3KS5#4KnY57KnY57H[C*dH[C*dH[C*dH[C*dH[C*
+dH[C*dH[C*eI!g<hI!g<hI!pEkI=6NlI=?WoIXZ`pIt)rtIt*!!J:N0$JUrB'JqAT+JqJ].K7ef0KS
+5#3KS>,6KnY57KnY57KnY58H[C*dH[C*dH[C*dH[C*dH[C*dH[C-fI!g<hI!g<hI!g?jI=6NlI=6Nm
+IXZ`pIXZcrIt)ruJ:N0#J:W9&JUrE)JqAT,K7ef/KS5#3KS>,6KnY57Knb>:L5(G;L5(G;H[C*dH[C
+*dH[C*dH[C*dH[L3gI!g<hI!g<hI!g<iI=6NlI=6NlIXZ`pIXZ`qIt)rtIt3'"J:N0$JUrB'JqAT+K
+7ef/K7no2KS5&5KnY57L5(G;L5(G;LPLY?LPLY?H[C*dH[C*dI!g<hI!g<hI!g<hI!g<hI!g<hI=6N
+lI=6NlI=6QnIXZ`pIXcisIt)ruJ:N0#J:W9&JV&K*JqAW-K7ef0KS5#4KnY57L5(G;L5(J=LPLY?LP
+LY?LPL\AI!g<hI!g<hI!g<hI!g<hI!g<hI!g<hI=6NlI=6NlI=6NmIXZ`pIXZ`qIt)rtIt3'"J:N0$
+JUrB(JqAT+K7ef/KS5#3KS>,6Knb>:L5(G<LPLY?LPUbBLkpkCLkpkCI!g<hI!g<hI!g<hI!g<hI!g
+<iI=6NlI=6NlI=6NlIXZ`pIXZ`pIXcisIt)ruJ:N0#J:W9&JUrE)JqAW-K7ei1KS5#4KnY58L5(G<L
+PLY?LPUbBLkpkCM2@(GM2@(GI!g<hI!g<hI!g<hI!pEkI=6NlI=6NlI=6NlI=?WoIXZ`pIXZcrIt)r
+tIt3'"J:N0$JUrB'JqAT+K7ef/K7no2KS>,6Knb>:L51P>LPUbBLkpkDM2@(GM2@(HMMd:KI=6NlI=
+6NlI=6NlI=6NlI=6NlI=6NlI=6QnIXZ`pIXZ`pIt)rtIt)ruJ:N0#J:W9&JUrE)JqAT,K7ef0KS5#4
+KnY58L5(G<LPLY@LkpkDM2@(GM2I1JMMd:KMMd:KI=6NlI=6NlI=6NlI=6NlI=6NlI=6QnIXZ`pIXZ
+`pIXZcrIt)rtIt3'"J:N0$JUrB'JqAT+JqJ].K7no2KS>,6Knb>:LPLY?LkpkCM2@(GM2I1JMMd:LM
+i3LOMi3LOI=6NlI=6NlI=6NlI=6NlI=?WoIXZ`pIXZ`pIXZ`qIt)rtIt)ruJ:N0#J:N3%JUrB(JqAT
+,K7ef/KS5#4KnY58L5(G<LPL\ALkpnEM2@+IMMd=MMi3LOMi<URN/W^SI=6NlI=6NlI=6QnIXZ`pIX
+Z`pIXZ`pIXZ`pIt)rtIt)rtIt3'"J:N0#JUrB'JV&K*JqAW-K7ei1KS5&5Knb>:L51P>LkpkCM2@(H
+MMd:LMi3LON/W^SN/W^TNK&pWIXZ`pIXZ`pIXZ`pIXZ`pIXZ`pIXZ`pIXcisIt)rtIt)ruJ:N0#J:N
+3%JUrB'JqAT+K7ef/K7no2KnY57L5(G<LPLY@LkpnEM2I1JMMmCNN/W^SN/`gVNK&pWNK&sYIXZ`pI
+XZ`pIXZ`pIXZ`pIXZ`pIXcisIt)rtIt)rtIt3'"J:N0#JUrB'JUrE)JqAT,K7ef0KS5#4KnY89L5(J
+=LPUbBM2@(HMMd=MMi3OQN/WaUNK&sYNfK-[NfK-[IXZ`pIXZ`pIXZ`pIXZ`qIt)rtIt)rtIt)rtIt
+*!!J:N0#J:N3%JUrB'JV&K*JqAW-K7ei1KS5&5Knb>:LPLY@LkpnEM2I1JMi3LON/W^TNK&pXNfK-[
+O,o?_O,o?_IXZ`pIXZcrIt)rtIt)rtIt)rtIt)rtIt)ruJ:N0#J:N0#J:W9&JUrB(JqAT+K7ef/K7n
+o2KnY57L5(G<LPL\ALl$tFMMd:LMi3OQN/`gVNfK-[O,o?_O-#HbOH>QcIt)rtIt)rtIt)rtIt)rtI
+t)rtIt)rtJ:N0#J:N0#J:N0$JUrB'JV&K*JqAT,K7ef0KS5#4KnY58L5(J=LPUbBM2@+IMMmCNN/W^
+TNK&sYNfT6^OH>QcOH>TeOcbcgIt)rtIt)rtIt)rtIt)rtIt)rtJ:N0#J:N0#J:N0#JUrB'JUrB'Jq
+AT+JqAW-K7ei1KS5&5KnY89L51P>LkpnEM2I1JMi3OQN/`gVNfK0]O,oBaOHGZfOcbfiP*1ukIt)rt
+It)rtIt)rtIt)ruJ:N0#J:N0#J:N0#J:N3%JUrB'JUrE)JqAT+K7ef/K7no2KS>,6L5(G;LPLY@Ll$
+tFMMd=MMi<USNK&sYO,o?`OH>TeOcbfiP*1ulPEV2oIt)ruJ:N0#J:N0#J:N0#J:N0#J:N0#J:N0$J
+UrB'JUrB'JV&K*JqAT,K7ef/KS5#3KnY58L5(G<LPL\AM2@(HMMmCNN/WaUNfK-\O-#HbOcbchP*2#
+mPEV2pPa%DsJ:N0#J:N0#J:N0#J:N0#J:N0#J:N0#JUrB'JUrB'JUrB(JqAT+JqAW-K7ef0KS5#4Kn
+Y89L5(J=LPUbCM2@+IMi3OQN/`gWNfT6_OH>TeP*1ulPEV5qPa%DtQ'IW"J:N0#J:N0#J:N0#J:N0#
+J:N0#J:W9&JUrB'JUrB'JV&K*JqAT+K7ef/K7ei1KS5&5KnY89L51P>LkpnEM2I1KMi<URNK&sYO,o
+BaOcbfiP*;)oPa%DtQ'IW#QBmi&J:N0#J:N0#J:N0#J:N0$JUrB'JUrB'JUrB'JUrB(JqAT+JqAT,K
+7ef/KS5#3KS>,6Knb>:LPLY@Ll$tFMMd=MN/WaUNK0$[O-#HcOcklkPE_;rQ'IW#QBmi'Q^=&*J:N3
+%JUrB'JUrB'JUrB'JUrB'JUrB'JUrB'JqAT+JqAT+JqJ].K7ef0KS5#3KnY57L5(G<LPL\ALl$tGMM
+mCON/WaUNfT6_OHGZgP*;)oPa.N!QBmi'Q^=),R$a8.JUrB'JUrB'JUrB'JUrB'JUrB'JUrB'JUrE)
+JqAT+JqAT+K7ef/K7ei1KS5#4KnY58L5(J=LPUbBM2@+IMMmCON/`gWO,oBaOcbfiPEV5qQ'IZ$Q^=
+),R$a;0R@0J2JUrB'JUrB'JUrB'JUrB'JUrB'JUrE)JqAT+JqAT+JqAW-K7ef/K7no2KS5&5KnY89L
+5(J=LPUbCM2@+IMi3OQNK&sZO-#HcOckolPa%GuQBml(R$a;0R@9S5R[T\6JUrB'JUrB'JUrB'JUrB
+'JV&K*JqAT+JqAT+JqAT+K7ef/K7ef/KS5#3KS>,6KnY89L51P>LkpkDM2I1KMi<USNK0$[OH>TeP*
+;)oPa.Q#Q^=),R@0M4R[]e9S"-"=JUrB'JV&K*JqAT+JqAT+JqAT+JqAT+JqAT+JqAW-K7ef/K7ef0
+KS5#3KS>,6Knb>:LPLY@LkpnEMMd=MN/WaUNfK0]OHGZgPEV5rQ'Rc'R$a;0R[T_8S=H+>SXl=BJqA
+T+JqAT+JqAT+JqAT+JqAT+JqAT+JqAT+K7ef/K7ef/K7ei1KS5#3KnY57L5(G;LPLY@Ll$tFMMd=MN
+/WaUNfT6_OcbfjPE_>tQC!r*R@0M4S"-"=SXl@DSt;OFJqAT+JqAT+JqAT+JqAT+JqAT+JqAT+JqJ]
+.K7ef/K7ef/KS5#3KS5#4KnY57L5(G<LPL\ALl$tGMMmCON/`gWNfT9`OckolPa.N"Q^F/.R[T_9S=
+Q4BStDXIT:hjMJqAT+JqAT+JqAT+JqAT+JqAT+K7ef/K7ef/K7ef/K7ef0KS5#3KS5&5KnY58L5(G<
+LPL\ALl$tGMMmCON/`jXO-#HcP*2#nQ'IZ%R$a;1S"#q=SXuIGT:hjNTqS0RJqAT+JqAT+JqAW-K7e
+f/K7ef/K7ef/K7ef/K7ef/K7no2KS5#3KS>,6KnY89L5(J=LPUbBM2@(HMMmCONK&sZO-#KdP*;,pQ
+'Rc(R@0M5S=Q4BT:_dLTqS3TU8"EXK7ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/KS5#3KS5#
+3KnY57KnY89L5(J=LPUbBM2@+IMi3OQNK&sZOH>TfPEV5rQC!u,R@9V8SXuFFTV8'RU8+KZUnjf^K7
+ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7no2KS5#3KS5#3KnY57Knb>:L5(J=LPUbBM2@+IMi3OQ
+NK0$[OHGZgPE_>uQ^=)-R[]h<StD[KTq\<WUnji`VP^5fK7ef/K7ef/K7ef/K7ef/K7ef/K7ef/K7e
+i1KS5#3KS5#3KS5#4KnY57Knb>:L51P>LPUbCM2@+IMi3ORNK0'\OHG]iPE_>uQ^F20S"-%@T:hmPU
+SFW]V5C/gVl6PmK7ef/K7ef/K7ef/K7ef/K7ef0KS5#3KS5#3KS5#3KS5#3KS5&5KnY57Knb>:L51P
+>LkpkDM2@+IMi<USNK0']OHG]iPa.Q$R$jD4S=Q7DTV8*TUnsrcVl6PnWMuntKS5#3KS5#3KS5#3KS
+5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS>,6KnY57L5(G;L51P>LkpkDM2I1JMi<USNfK0^OcbfjPa.Q$
+R$jG6SXuIHTq\?ZVPg>jWN)u!X/i>'KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#4KnY
+57KnY57L5(G;L51P>LkpkDM2I1KMi<USNfK0^OckomQ'Rc(R@9V9StD[LUSO``Vl6SpX/rD)Xf\b/K
+S5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS5&5KnY57KnY57L5(G;L51P>LkpkDM2I1KMi<U
+SNfK0^OckomQ'Rc(R[]h<T:hmQUnsreWN*##Xfeh1YHY78KS5#3KS5#3KS5#3KS5#3KS5#3KS5#3KS
+5#3KS5#4KnY57KnY57KnY58L5(G;L51P>LkpkDM2@+IMi<USNfK0^OckomQ'Rf*R[]k>TV8*UV5L8k
+WiW>*YHY79ZEgdAKnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY58L5(G;L51
+P>LPUbCM2@+IMi<USNfK0^OckomQ'[l+S"-%ATVA3XVl6SqXKJb2Z*L^B['[6KKnY57KnY57KnY57K
+nY57KnY57KnY57KnY57KnY57KnY57KnY57KnY58L5(G;L51P>LPUbBM2@+IMi3ORNfK0^OckomQC!u
+-S"6.DTqeH]W2Zi"Y->1:Za@-K\$riVKnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57Kn
+Y57KnY58L5(G;L51P>LPUbBM2@+IMi3ORNfK0^OckonQC"#.S=Q:GU84ZbWN3/(Yd1UB[^WcW\[oA`
+KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY57KnY58L5(G;L5(J=LPL\AM2@(HMi3
+ORNK0']OckonQC"#.S=Z@HUSXlfX0&S0ZF%$K\@T;b]Y2"mL5(G;L4t>8KnY57KnY57KnY57KnY57K
+nY57KnY57KnY57KnY57KnY58L5(G;L5(J=LPL\ALl$tGMMmFPNK0']OckonQC+)0S=ZCJUo()jXKJe
+5['mKU]=kqn^qde&L5(G;L5(G;L5(G;L5(G;L5(G:KnY57KnY57KnY57KnY57KnY57KnY57L5(G;L5
+(G<LPLY@Ll$tFMMmCONK0']OckonQC+)0SY)UNV5L;nY->4=\%0,`^;.S%_o0L4L5(G;L5(G;L5(G;
+L5(G;L5(G;L5(G;L5(D9KnY57KnY57KnY57KnY57Knb>:L5(G;LPLY?LkpnEMMd=NNK&sZOHPflQC+
+)0SY)UNVPpMsYHkOE\\#Pi_8F73a2l?CL5(G;L5(G;L5(G;L5(G;L5(G;L5(G;L5(G;L5(D9KnY57K
+nY57KnY57KnY89L5(G;L51P>LkpkDM2I4LN/`jYOHG`kQC"#/SY)XPVQ$W!Z*^sM]Y;2!`Q-'BbKS2
+TLPCP<L5(G;L5(G;L5(G;L5(G;L5(G;L5(G;L5(G;L4t>8KnY57KnY57KnY57L5(G;L5(J=LPUbBM2
+@+JN/WaWOHG]jQ'[o.SY2^QVlHl'ZF.3S^;7b-aNMfQcd:(eLPLY?LPLY?LPLY?LPLV=L5(G;L5(G;
+L5(G;L5(G;L5(D9KnY57KnY57KnY57KnY89L5(G;LPLY@Ll%"HMi<XUO-#NgQ'[o.SY2^RW2m)+[(!
+Z]_8OC:bg4\ceCE.$LPLY?LPLY?LPLY?LPLY?LPLY>L5(G;L5(G;L5(G;L5(G;KnY57KnY57KnY57K
+nY57L5(G;L51P>LkpnFMMmFQO-#KfQ'Ri-SY2^RW3!2.[^j)f`5p-IdF6\!g"Y<;LPLY?LPLY?LPLY
+?LPLY?LPLY?LPLY>L5(G;L5(G;L5(G;KnY57KnY57KnY57KnY57KnY58L5(G<LPUbCMMmFQNfT<cPa
+7]*SY2^SWN<>2\%BDma32fWe_&X4hr3SSLkpkBLPLY?LPLY?LPLY?LPLY?LPLY?LPCP<L5(G;L5(G;
+L4t>8KnY57KnY57KnY57KnY57Knb>:LPL\AM2I4MNK0*_PEhK'S=cOQWNEG5\\5l"bKnYhgYUoLk3(
+smLkpkCLkpkCLkpkCLkgb@LPLY?LPLY?LPLY>L5(G;L5(G;L4t>8KnY57KnY57KS5#3KS5&5KnY58L
+5(J=Ll%"IN/`m[P*D<$S=cOQWNEJ7]>2A,cI:G$i8j(dmI0Q6LkpkCLkpkCLkpkCLkpkCLkgb@LPLY
+?LPLY?LPCP<L5(G;L4t>8KnY57KnY25KS5#3KS5#3KS5&5KnY89LPUeEMi<[WOcu)uS"?@NWiiY:]Y
+__6db*C8k3DC)p%S7VLkpkCLkpkCLkpkCLkpkCLkpkCLPLY?LPLY?LPLV=L5(G;L4t>8KnY57KS5#3
+KS5#3KS5#3KS5#3KS>,6L51S@MMmFROHPipR[p.KWNNS;^;S1@fA5KOmd]rFs8W-!M2@(GM2@(FLkp
+kCLkpkCLkpkCLkphALPLY?LPLY>L5(G;L5(D9KnY57KS5#3KS4u1K7ef/K7ef/K7no2Knb>;Ll%%KN
+ffNkR@KqGWNNV=^W+OJgZ.Shp\4L`s8W-!M2@(GM2@(GM2@(GM26tDLkpkCLkpkCLPLY?LPLY?L5(G
+;L5(D9KnY56KS5#3K7ef/K7ec-JqAT+JqJ].KS5&6LPUeFNK93dQ^aVCWNNV>_8ssShs'_.s8D`ms8
+W-!M2@(GM2@(GM2@(GM2@(GM26tDLkpkCLkphALPLY?L5(G;L5(D9KnY56KS5#2K7ef.JqAT+JqAQ)
+JV&K*JqJ]/KnbA>MiEd\QC4>=W3*G=_TL<\j6usHs8V?BzM2@(GM2@(GM2@(GM2@(GM2@(FLkpkCLk
+pkBLPLY?LPCP<L5(D9KnY25KS4u1K7ec-JqAQ)JUrB'J:N3%JUrE)K7nr6M2R@TPF%f5VQI5;_p$Zd
+jRrQDzzMMd:KMMd:KMM[1HM2@(GM2@(GM26tDLkpkCLPLY?LPLV=L5(D9KnY25KS4u1K7\],JUrB&J
+:N0#It)rtIt3'"JV&N-L5:bIOd2?,V5pr8`Qm,nhY$pLzzMMd:KMMd:KMMd:KMMd7IM2@(GM2@(FLk
+pkCLkgb@LPLV=L5(D9KnY25KS+o0JqAT*JUr?%It)rtIXZ`pIXZ`pIt3*%K8#,>Nfoa!U8kN2`mNZ0
+^&S-5zzMMd:KMMd:KMMd:KMMd:KMM[1HM2@(GM26tDLkphALPLY>L5(D9KnY25KS+o/JqAQ)J:N0"I
+suiqI=6NkI!g<hI=6QoJ:`H0MiX'iT;Sp*a40;QzzzMi3LOMi3LNMMd:KMMd:KMMd:JM2@(GM2@%EL
+kpkBLPLY>L5(G:KnY25K7ef.Jq8K'J:E&tIXQWlI!g9fH?sm`H@(!dI=Hg#LPq4YS><<ua3akezzzM
+i3LOMi3LOMi3LOMMd:KMMd:KMM[1HM2@(FLkpkCLPLY?L5(G:KnY25K7ef.Jq8K'J:E#sI=6KiH[:!
+`H$FRYG^+IYH@('iJqf2GQ_17db5_MBzzzMi3LOMi3LOMi3LOMi3LOMMd:KMMd:JM2@(GLkpkCLkgb
+@L5(G:KnY25K7ec-JUr?%It)oqI=-BfH?ja[GBS.PF`hhLG'A4YI=[-2P*r&OzzzzN/W^SN/W[QMi3
+LOMi3LOMi3IMMMd:KMM[1HM26tDLkgb@LPCP;KnY25K7ec-JUr?$IsufoI!^0bH$FOVF`__HEcQ2@E
+cZ>GG^P$rN0BN]zzzzN/W^SN/W^SN/W^SMi3LOMi3LOMMd:KMMd7IM2@%ELkphALPCP<KnY25K7ec-
+JUi9#IXZ]mH[9s_G^"=RF)l8>E,TW3DJjB3Ecl\YLQRu)zzzzN/W^SN/W^SN/W^SN/W^RMi3LOMi3I
+MMMd:JM2@(FLkpkBLPCP<KnY25K7ec-JUi9#IXQTkH[9s^GBJ"KEcH#8D/=!&Bk_9rCi4<>Js$*6zz
+zzNK&pWNK&mUN/W^SN/W^SN/W[QMi3LOMMd:KM2@(GLkpkBLPLV=KnY25K7ec-JUi6"IXQTjH?jaZG
+'%eGE,TT0C2%<mARo:]AS5asG'!]azzzzNK&pWNK&pWNK&pWN/W^SN/W^SMi3LOMi*CLMMd7IM26tD
+LPLV=L4t>7K7ec-JUi6"IXQTjH?j^XF`VSBDf'9(B4b[`?sd5G?!^rPG5qUCzzzzNK&pWNK&pWNK&p
+WNK&pVN/W^SN/W[QMi3LNMMd:JM2@%ELPLY>L4t>7KS+l.JUi6!IXQTiH$FOUFE2A>D/3iuARf+S>Z
+k00<E3($=o\O&zzzzNfK-[NfK-ZNK&pWNK&pWNK&mUN/W^SMi3LOMMd:KM2@(FLkgb?L4t>7KS+l.J
+Ui6!I=-BfH$FLTF)l5;ChdWp@piSG=&`'n9h\2P7K<DgzzzzNfK-[NfK-[NfK-[NK&pWNK&pWN/W^S
+N/NUPMi*CLMM[1GLkphAL5(D9KS+o/JUi6!I=-BfH$=FRF)c,8CM@Bj@:!,=;c$.Z770C-3WK-[zzz
+zNfK-[NfK-[NfK-[NfK-[NK&pWNK&mUN/W^RMi3IMMM[1HLkphAL5(D9KS+o/JUi6!I=-BfH$=FREc
+H#6C1q0f?X-]4:eXAG5!(bfzzzzzO,o?_O,o?_O,o<]NfK-[NfK-ZNK&pWN/W^SMi3LOMMd7IM26tC
+LPCP;KS4u0JUr?$IXHKgH$=FREc>o4C1h'c?<UB-9h7W72_ls8zzzzzO,o?_O,o?_O,o?_O,o<]NfK
+-[NfB$XNK&mUN/W[QMi*CKM2@%ELPLV<KnP)1Jq8H%IXQQhH$=FREc>o4BkCm`?!10(91;'*1+FLhz
+zzzzOH>QcOH>NaO,o?_O,o?_O,f6\NfK-ZNK&pVN/W^RMi3IMM2@%ELPLV=KnP,3Jq8H%IXQTiH$FL
+SEc>o4BkCj_>Zas$8jkg#/gVGLzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz~>
+InterpretLevel1 not {
+  grestore
+} if
+grestore
+%%%%EndImage
+% End plot #2
+% Begin plot #3
+2.000 UL
+LTb
+LCb setrgbcolor
+/Helvetica findfont 200 scalefont setfont
+3365 1235 M
+19 1 V
+5 1 V
+15 71 V
+3 8 V
+-3 9 V
+-20 51 V
+-12 19 V
+-7 4 V
+0 -172 R
+19 1 V
+20 0 V
+20 1 V
+20 1 V
+20 1 V
+16 6 V
+4 9 V
+20 40 V
+20 30 V
+18 79 V
+-18 56 V
+-11 24 V
+-9 8 V
+-20 16 V
+-20 12 V
+-20 9 V
+-20 8 V
+-20 6 V
+-20 4 V
+-19 4 V
+0 -323 R
+19 0 V
+20 0 V
+20 -1 V
+20 -2 V
+20 -5 V
+20 -4 V
+20 6 V
+20 13 V
+13 11 V
+7 10 V
+19 29 V
+20 25 V
+14 15 V
+6 18 V
+20 51 V
+4 10 V
+-4 57 V
+-2 23 V
+-18 36 V
+-20 32 V
+-8 11 V
+-12 12 V
+-19 18 V
+-20 15 V
+-20 11 V
+-20 9 V
+-20 8 V
+-20 5 V
+-5 1 V
+-15 4 V
+-20 5 V
+-20 3 V
+-19 2 V
+0 -436 R
+19 -1 V
+20 0 V
+20 -2 V
+20 -6 V
+20 -12 V
+20 -15 V
+20 -2 V
+20 12 V
+20 15 V
+19 15 V
+20 14 V
+11 8 V
+9 12 V
+20 22 V
+20 21 V
+20 20 V
+4 4 V
+16 33 V
+20 39 V
+4 7 V
+8 80 V
+-12 72 V
+-2 7 V
+-18 47 V
+-17 32 V
+-3 5 V
+-20 29 V
+-20 23 V
+-20 18 V
+-5 5 V
+-15 13 V
+-20 15 V
+-19 12 V
+-20 11 V
+-20 8 V
+-20 7 V
+-20 5 V
+-20 4 V
+-20 4 V
+-20 3 V
+stroke 3404 1795 M
+-20 3 V
+-19 2 V
+0 -598 R
+19 0 V
+20 -2 V
+20 -3 V
+20 -9 V
+20 -19 V
+12 -12 V
+8 -5 V
+20 -2 V
+20 3 V
+18 4 V
+2 2 V
+19 15 V
+20 14 V
+20 13 V
+20 13 V
+20 13 V
+16 10 V
+4 3 V
+20 19 V
+20 18 V
+20 17 V
+20 18 V
+4 4 V
+15 25 V
+20 29 V
+19 25 V
+1 5 V
+20 47 V
+14 28 V
+6 22 V
+18 57 V
+2 13 V
+10 66 V
+-3 80 V
+-7 32 V
+-12 47 V
+-8 18 V
+-20 41 V
+-11 20 V
+-9 13 V
+-20 27 V
+-20 23 V
+-16 16 V
+-3 4 V
+-20 19 V
+-20 16 V
+-20 15 V
+-20 13 V
+-20 11 V
+-4 2 V
+-16 9 V
+-20 10 V
+-20 9 V
+-20 8 V
+-19 6 V
+-20 6 V
+-20 5 V
+-20 4 V
+-20 4 V
+-20 3 V
+-20 2 V
+-20 2 V
+-20 1 V
+-19 1 V
+4342 840 M
+2 79 V
+3 80 V
+3 79 V
+0 79 V
+-11 67 V
+-2 13 V
+-18 37 V
+-19 32 V
+-8 10 V
+-12 12 V
+-20 16 V
+-20 12 V
+-20 10 V
+-20 8 V
+-20 5 V
+-20 4 V
+-20 2 V
+-19 1 V
+-20 0 V
+-20 -1 V
+-20 -2 V
+-20 -3 V
+-20 -4 V
+-20 -4 V
+-20 -6 V
+-20 -7 V
+-20 -7 V
+-19 -9 V
+-20 -11 V
+-20 -12 V
+-6 -4 V
+-14 -7 V
+-20 -11 V
+-20 -12 V
+-20 -12 V
+-20 -13 V
+stroke 3782 1261 M
+-20 -14 V
+-14 -10 V
+-5 -3 V
+-20 -11 V
+-20 -10 V
+-20 -11 V
+-20 -10 V
+-20 -11 V
+-20 -10 V
+-20 -12 V
+-3 -2 V
+-17 -8 V
+-20 -7 V
+-19 -2 V
+-20 -1 V
+-20 -1 V
+-20 2 V
+-20 11 V
+-5 6 V
+-15 17 V
+-20 12 V
+-20 5 V
+-20 2 V
+-19 1 V
+139 1547 R
+-20 1 V
+-20 1 V
+-6 1 V
+-14 0 V
+-20 1 V
+-20 1 V
+-20 0 V
+-19 0 V
+5334 2195 M
+-20 1 V
+-20 0 V
+-20 1 V
+-19 0 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 2 V
+-20 1 V
+-20 2 V
+-20 2 V
+-20 3 V
+-20 2 V
+-19 3 V
+-20 3 V
+-20 3 V
+-20 4 V
+-20 4 V
+-20 4 V
+-20 4 V
+-20 5 V
+-20 5 V
+-19 5 V
+-20 6 V
+-20 6 V
+-11 4 V
+-9 3 V
+-20 6 V
+-20 7 V
+-20 7 V
+-20 7 V
+-20 8 V
+-20 8 V
+-19 9 V
+-20 9 V
+-20 9 V
+-13 6 V
+-7 3 V
+-20 9 V
+-20 9 V
+-20 10 V
+-20 10 V
+-20 10 V
+-19 10 V
+-20 10 V
+-16 8 V
+-4 2 V
+-20 10 V
+-20 10 V
+-20 10 V
+-20 10 V
+-20 10 V
+-20 11 V
+-20 9 V
+-14 8 V
+-5 2 V
+-20 10 V
+-20 9 V
+-20 9 V
+-20 10 V
+-20 9 V
+-20 9 V
+-20 8 V
+-20 9 V
+-10 4 V
+-9 4 V
+-20 8 V
+-20 8 V
+-20 8 V
+-20 7 V
+stroke 4041 2620 M
+-20 8 V
+-20 7 V
+-20 7 V
+-20 6 V
+-20 7 V
+-19 6 V
+-12 3 V
+-8 3 V
+-20 6 V
+-20 5 V
+-20 6 V
+-20 5 V
+-20 5 V
+-20 5 V
+-20 4 V
+-19 4 V
+-20 4 V
+-20 4 V
+-20 4 V
+-20 3 V
+-20 3 V
+-20 3 V
+-20 3 V
+-20 2 V
+-20 3 V
+-19 2 V
+-20 1 V
+-20 2 V
+4054 840 M
+-2 79 V
+-4 80 V
+-7 47 V
+-5 32 V
+-15 33 V
+-20 36 V
+-7 10 V
+-13 11 V
+-20 13 V
+-20 10 V
+-19 7 V
+-20 4 V
+-20 1 V
+-20 0 V
+-20 -2 V
+-20 -4 V
+-20 -4 V
+-20 -6 V
+-20 -6 V
+-19 -6 V
+-20 -7 V
+-20 -8 V
+-8 -3 V
+-12 -5 V
+-20 -8 V
+-20 -9 V
+-20 -8 V
+-20 -8 V
+-20 -5 V
+-20 2 V
+-19 7 V
+-20 3 V
+-20 -1 V
+-20 2 V
+-20 9 V
+-17 21 V
+-3 3 V
+-20 15 V
+-20 7 V
+-20 3 V
+-19 1 V
+39 2639 R
+-20 0 V
+-19 0 V
+1969 -77 R
+-20 1 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 1 V
+-20 0 V
+-20 0 V
+-20 1 V
+-20 0 V
+-20 0 V
+-20 1 V
+-19 0 V
+-20 1 V
+-20 1 V
+-20 0 V
+-20 1 V
+-20 1 V
+-20 0 V
+-20 1 V
+-20 1 V
+-19 1 V
+-20 1 V
+-20 0 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+stroke 4737 3765 M
+-20 1 V
+-20 1 V
+-19 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 2 V
+-20 1 V
+-19 1 V
+-1 0 V
+-20 1 V
+-20 1 V
+-19 1 V
+-20 2 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 2 V
+-20 1 V
+-20 1 V
+-20 1 V
+-19 1 V
+-20 2 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 2 V
+-20 1 V
+-19 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-19 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 1 V
+-20 0 V
+-20 1 V
+-20 1 V
+-20 1 V
+-19 0 V
+-20 1 V
+-20 1 V
+-20 0 V
+-20 1 V
+-20 0 V
+-20 1 V
+-20 0 V
+-20 1 V
+-20 0 V
+-19 0 V
+-20 1 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 1 V
+-20 0 V
+3923 840 M
+-1 26 V
+-3 53 V
+-10 80 V
+-7 20 V
+-20 46 V
+-8 13 V
+-12 9 V
+-20 11 V
+-20 7 V
+-20 3 V
+-20 1 V
+-20 0 V
+-19 -2 V
+-20 -3 V
+-20 -4 V
+-20 -4 V
+-20 -4 V
+-20 -4 V
+-20 -4 V
+-20 -4 V
+-20 0 V
+-20 10 V
+-19 15 V
+-20 7 V
+-20 1 V
+-20 2 V
+-20 7 V
+-20 19 V
+-10 16 V
+-10 8 V
+-20 7 V
+-20 4 V
+-19 1 V
+3811 840 M
+-9 49 V
+stroke 3802 889 M
+-6 30 V
+-14 28 V
+-20 29 V
+-19 20 V
+-5 3 V
+-15 4 V
+-20 3 V
+-20 2 V
+-20 1 V
+-20 3 V
+-20 11 V
+-20 17 V
+-20 9 V
+-20 12 V
+-9 17 V
+-10 10 V
+-20 11 V
+-20 2 V
+-20 1 V
+-20 5 V
+-20 13 V
+-20 27 V
+-6 10 V
+-14 6 V
+-20 4 V
+-19 2 V
+3699 840 M
+-16 40 V
+-20 24 V
+-7 15 V
+-13 26 V
+-20 20 V
+-19 34 V
+-1 0 V
+-20 20 V
+-20 9 V
+-19 26 V
+-9 24 V
+-11 7 V
+-20 4 V
+-20 1 V
+-20 3 V
+-20 6 V
+-20 13 V
+-20 24 V
+-14 21 V
+-6 2 V
+-19 2 V
+0 74 R
+-20 1 V
+-5 1 V
+-15 71 V
+-3 8 V
+3 9 V
+20 51 V
+12 19 V
+8 4 V
+0 -172 R
+-20 1 V
+-20 0 V
+-20 1 V
+-20 1 V
+-20 1 V
+-16 6 V
+-4 9 V
+-20 40 V
+-20 30 V
+-18 79 V
+18 56 V
+11 24 V
+9 8 V
+20 16 V
+20 12 V
+20 9 V
+20 8 V
+20 6 V
+20 4 V
+20 4 V
+0 -323 R
+-20 0 V
+-20 0 V
+-20 -1 V
+-20 -2 V
+-20 -5 V
+-20 -4 V
+-20 6 V
+-20 13 V
+-13 11 V
+-7 10 V
+-19 29 V
+-20 25 V
+-14 15 V
+-6 18 V
+-20 51 V
+-4 10 V
+4 57 V
+2 23 V
+18 36 V
+20 32 V
+8 11 V
+12 12 V
+19 18 V
+20 15 V
+20 11 V
+stroke 3225 1610 M
+20 9 V
+20 8 V
+20 5 V
+5 1 V
+15 4 V
+20 5 V
+20 3 V
+20 2 V
+0 -436 R
+-20 -1 V
+-20 0 V
+-20 -2 V
+-20 -6 V
+-20 -12 V
+-20 -15 V
+-20 -2 V
+-20 12 V
+-20 15 V
+-19 15 V
+-20 14 V
+-11 8 V
+-9 12 V
+-20 22 V
+-20 21 V
+-20 20 V
+-4 4 V
+-16 33 V
+-20 39 V
+-4 7 V
+-8 80 V
+12 72 V
+2 7 V
+18 47 V
+17 32 V
+3 5 V
+20 29 V
+20 23 V
+20 18 V
+5 5 V
+15 13 V
+20 15 V
+19 12 V
+20 11 V
+20 8 V
+20 7 V
+20 5 V
+20 4 V
+20 4 V
+20 3 V
+20 3 V
+20 2 V
+0 -598 R
+-20 0 V
+-20 -2 V
+-20 -3 V
+-20 -9 V
+-20 -19 V
+-12 -12 V
+-8 -5 V
+-20 -2 V
+-20 3 V
+-18 4 V
+-2 2 V
+-19 15 V
+-20 14 V
+-20 13 V
+-20 13 V
+-20 13 V
+-16 10 V
+-4 3 V
+-20 19 V
+-20 18 V
+-20 17 V
+-20 18 V
+-4 4 V
+-15 25 V
+-20 29 V
+-19 25 V
+-1 5 V
+-20 47 V
+-14 28 V
+-6 22 V
+-18 57 V
+-2 13 V
+-10 66 V
+3 80 V
+7 32 V
+12 47 V
+8 18 V
+20 41 V
+11 20 V
+9 13 V
+20 27 V
+20 23 V
+16 16 V
+3 4 V
+20 19 V
+20 16 V
+20 15 V
+20 13 V
+20 11 V
+4 2 V
+16 9 V
+20 10 V
+stroke 3126 2049 M
+20 9 V
+20 8 V
+19 6 V
+20 6 V
+20 5 V
+20 4 V
+20 4 V
+20 3 V
+20 2 V
+20 2 V
+20 1 V
+20 1 V
+1554 2202 M
+-20 -2 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-19 0 V
+-20 -1 V
+-20 0 V
+-20 -1 V
+1970 551 R
+-20 0 V
+-20 0 V
+-20 -1 V
+-20 -1 V
+-14 0 V
+-6 -1 V
+-20 -1 V
+-20 -1 V
+-20 -2 V
+-20 -1 V
+-19 -2 V
+-20 -3 V
+-20 -2 V
+-20 -3 V
+-20 -3 V
+-20 -3 V
+-20 -3 V
+-20 -4 V
+-20 -4 V
+-20 -4 V
+-19 -4 V
+-20 -4 V
+-20 -5 V
+-20 -5 V
+-20 -5 V
+-20 -6 V
+-20 -5 V
+-20 -6 V
+-8 -3 V
+-12 -3 V
+-19 -6 V
+-20 -7 V
+-20 -6 V
+-20 -7 V
+-20 -7 V
+-20 -8 V
+-20 -7 V
+-20 -8 V
+-20 -8 V
+-20 -8 V
+-9 -4 V
+-10 -4 V
+-20 -9 V
+-20 -8 V
+-20 -9 V
+-20 -9 V
+-20 -10 V
+-20 -9 V
+-20 -9 V
+-20 -10 V
+-5 -2 V
+-14 -8 V
+-20 -9 V
+-20 -11 V
+-20 -10 V
+-20 -10 V
+-20 -10 V
+-20 -10 V
+-20 -10 V
+-4 -2 V
+-16 -8 V
+-20 -10 V
+-19 -10 V
+-20 -10 V
+-20 -10 V
+-20 -10 V
+-20 -9 V
+-20 -9 V
+-7 -3 V
+-13 -6 V
+-20 -9 V
+-20 -9 V
+-19 -9 V
+-20 -8 V
+-20 -8 V
+-20 -7 V
+-20 -7 V
+-20 -7 V
+-20 -6 V
+-9 -3 V
+-11 -4 V
+-20 -6 V
+stroke 1872 2258 M
+-20 -6 V
+-19 -5 V
+-20 -5 V
+-20 -5 V
+-20 -4 V
+-20 -4 V
+-20 -4 V
+-20 -4 V
+-20 -3 V
+-20 -3 V
+-19 -3 V
+-20 -2 V
+-20 -3 V
+-20 -2 V
+-20 -2 V
+-20 -1 V
+3365 1194 M
+-20 -1 V
+-20 -2 V
+-20 -5 V
+-20 -12 V
+-15 -17 V
+-5 -6 V
+-20 -11 V
+-20 -2 V
+-20 1 V
+-20 1 V
+-19 2 V
+-20 7 V
+-17 8 V
+-3 2 V
+-20 12 V
+-20 10 V
+-20 11 V
+-20 10 V
+-20 11 V
+-20 10 V
+-20 11 V
+-5 3 V
+-14 10 V
+-20 14 V
+-20 13 V
+-20 12 V
+-20 12 V
+-20 11 V
+-14 7 V
+-6 4 V
+-20 12 V
+-20 11 V
+-19 9 V
+-20 7 V
+-20 7 V
+-20 6 V
+-20 4 V
+-20 4 V
+-20 3 V
+-20 2 V
+-20 1 V
+-20 0 V
+-19 -1 V
+-20 -2 V
+-20 -4 V
+-20 -5 V
+-20 -8 V
+-20 -10 V
+-20 -12 V
+-20 -16 V
+-12 -12 V
+-8 -10 V
+-19 -32 V
+-18 -37 V
+-2 -13 V
+-11 -67 V
+0 -79 V
+3 -79 V
+3 -80 V
+2 -79 V
+1435 3749 M
+-20 0 V
+-20 -1 V
+1970 77 R
+-20 0 V
+-20 0 V
+-20 0 V
+-20 -1 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 -1 V
+-19 0 V
+-20 0 V
+-20 -1 V
+-20 0 V
+-20 -1 V
+-20 0 V
+-20 -1 V
+-20 0 V
+-20 -1 V
+-20 -1 V
+-19 0 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+stroke 2907 3815 M
+-20 0 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-19 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-19 -1 V
+-20 -1 V
+-20 -2 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -2 V
+-19 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -2 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -2 V
+-19 -1 V
+-20 -1 V
+-20 -1 V
+-1 0 V
+-19 -1 V
+-20 -1 V
+-20 -2 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-19 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 -1 V
+-20 0 V
+-20 -1 V
+-19 -1 V
+-20 -1 V
+-20 -1 V
+-20 0 V
+-20 -1 V
+-20 -1 V
+-20 0 V
+-20 -1 V
+-20 -1 V
+-19 0 V
+-20 -1 V
+-20 0 V
+-20 0 V
+-20 -1 V
+-20 0 V
+-20 0 V
+-20 -1 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+3365 1186 M
+-20 -1 V
+-20 -3 V
+-20 -7 V
+-20 -15 V
+-3 -3 V
+-17 -21 V
+-20 -9 V
+-20 -2 V
+-20 1 V
+-20 -3 V
+-19 -7 V
+-20 -2 V
+-20 5 V
+-20 8 V
+-20 8 V
+-20 9 V
+-20 8 V
+-12 5 V
+-8 3 V
+-20 8 V
+-20 7 V
+-19 6 V
+-20 6 V
+-20 6 V
+-20 4 V
+-20 4 V
+-20 2 V
+-20 0 V
+stroke 2847 1203 M
+-20 -1 V
+-20 -4 V
+-19 -7 V
+-20 -10 V
+-20 -13 V
+-13 -11 V
+-7 -10 V
+-20 -36 V
+-15 -33 V
+-5 -32 V
+-7 -47 V
+-4 -80 V
+-2 -79 V
+690 337 R
+-20 -1 V
+-20 -4 V
+-20 -7 V
+-10 -8 V
+-10 -16 V
+-20 -19 V
+-20 -7 V
+-20 -2 V
+-20 -1 V
+-20 -7 V
+-19 -15 V
+-20 -10 V
+-20 0 V
+-20 4 V
+-20 4 V
+-20 4 V
+-20 4 V
+-20 4 V
+-20 4 V
+-20 3 V
+-19 2 V
+-20 0 V
+-20 -1 V
+-20 -3 V
+-20 -7 V
+-20 -11 V
+-12 -9 V
+-8 -13 V
+-20 -46 V
+-7 -20 V
+-10 -80 V
+-3 -53 V
+-1 -26 V
+559 329 R
+-20 -2 V
+-20 -4 V
+-14 -6 V
+-6 -10 V
+-20 -27 V
+-20 -13 V
+-20 -5 V
+-20 -1 V
+-20 -2 V
+-20 -11 V
+-10 -10 V
+-9 -17 V
+-20 -12 V
+-20 -9 V
+-20 -17 V
+-20 -11 V
+-20 -3 V
+-20 -1 V
+-20 -2 V
+-20 -3 V
+-15 -4 V
+-5 -3 V
+-19 -20 V
+-20 -29 V
+-14 -28 V
+-6 -30 V
+-9 -49 V
+447 321 R
+-20 -2 V
+-6 -2 V
+-14 -21 V
+-20 -24 V
+-20 -13 V
+-20 -6 V
+-20 -3 V
+-20 -1 V
+-20 -4 V
+-11 -7 V
+-9 -24 V
+-19 -26 V
+-20 -9 V
+-20 -20 V
+-1 0 V
+-19 -34 V
+-20 -20 V
+-13 -26 V
+-7 -15 V
+-20 -24 V
+-16 -40 V
+% End plot #3
+% Begin plot #4
+stroke
+1.000 UL
+LTb
+1.00 1.00 1.00 C /Helvetica findfont 200 scalefont setfont
+3657 1305 N 0 471 -5 0 0 -465 h
+3652 1311 N 0 485 -15 0 0 -471 h
+3637 1325 N 0 490 -5 0 0 -485 h
+3632 1330 N 0 505 -17 0 0 -490 h
+3615 1345 N 0 507 -3 0 0 -505 h
+3612 1347 N 0 522 -20 0 0 -507 h
+3592 1362 N 0 525 -4 0 0 -522 h
+3588 1365 N 0 535 -16 0 0 -525 h
+3572 1375 N 0 544 -16 0 0 -535 h
+3556 1384 N 0 546 -3 0 0 -544 h
+3553 1386 N 0 556 -20 0 0 -546 h
+3533 1396 N 0 564 -18 0 0 -556 h
+3515 1404 N 0 565 -2 0 0 -564 h
+3513 1405 N 0 572 -20 0 0 -565 h
+3493 1412 N 0 579 -20 0 0 -572 h
+3473 1419 N 0 584 -19 0 0 -579 h
+3454 1424 N 0 584 -2 0 0 -584 h
+3452 1424 N 0 588 -18 0 0 -584 h
+3434 1428 N 0 591 -20 0 0 -588 h
+3414 1431 N 0 593 -20 0 0 -591 h
+3394 1433 N 0 594 -20 0 0 -593 h
+5334 1038 N 0 198 -20 0 0 -198 h
+5314 1038 N 0 198 -19 0 0 -198 h
+5295 1038 N 0 198 -20 0 0 -198 h
+5275 1038 N 0 198 -20 0 0 -198 h
+5255 1038 N 0 198 -20 0 0 -198 h
+5235 1038 N 0 198 -20 0 0 -198 h
+5215 1038 N 0 198 -19 0 0 -198 h
+5196 1038 N 0 198 -20 0 0 -198 h
+5176 1038 N 0 198 -20 0 0 -198 h
+5156 1038 N 0 198 -20 0 0 -198 h
+5136 1038 N 0 198 -20 0 0 -198 h
+5116 1038 N 0 198 -19 0 0 -198 h
+5097 1038 N 0 198 -20 0 0 -198 h
+5077 1038 N 0 198 -20 0 0 -198 h
+5057 1038 N 0 198 -20 0 0 -198 h
+5037 1038 N 0 198 -20 0 0 -198 h
+5017 1038 N 0 198 -19 0 0 -198 h
+4998 1038 N 0 198 -20 0 0 -198 h
+4978 1038 N 0 198 -20 0 0 -198 h
+4958 1038 N 0 198 -20 0 0 -198 h
+4938 1038 N 0 198 -20 0 0 -198 h
+4918 1038 N 0 198 -19 0 0 -198 h
+4899 1038 N 0 198 -20 0 0 -198 h
+4879 1038 N 0 198 -20 0 0 -198 h
+4859 1038 N 0 198 -20 0 0 -198 h
+4839 1038 N 0 198 -20 0 0 -198 h
+4819 1038 N 0 198 -19 0 0 -198 h
+4800 1038 N 0 198 -20 0 0 -198 h
+4780 1038 N 0 198 -20 0 0 -198 h
+4760 1038 N 0 198 -20 0 0 -198 h
+4740 1038 N 0 198 -20 0 0 -198 h
+4720 1038 N 0 198 -19 0 0 -198 h
+4701 1038 N 0 198 -20 0 0 -198 h
+4681 1038 N 0 198 -20 0 0 -198 h
+4661 1038 N 0 198 -20 0 0 -198 h
+4641 1038 N 0 198 -20 0 0 -198 h
+4621 1038 N 0 198 -19 0 0 -198 h
+4602 1038 N 0 198 -20 0 0 -198 h
+4582 1038 N 0 198 -20 0 0 -198 h
+4562 1038 N 0 198 -20 0 0 -198 h
+4542 1038 N 0 198 -19 0 0 -198 h
+4523 1038 N 0 198 -20 0 0 -198 h
+4503 1038 N 0 198 -20 0 0 -198 h
+4483 1038 N 0 198 -20 0 0 -198 h
+4463 1038 N 0 198 -20 0 0 -198 h
+4443 1038 N 0 198 -19 0 0 -198 h
+4424 1038 N 0 198 -20 0 0 -198 h
+4404 1038 N 0 198 -20 0 0 -198 h
+4384 1038 N 0 198 -20 0 0 -198 h
+4364 1038 N 0 198 -20 0 0 -198 h
+4344 1038 N 0 198 -19 0 0 -198 h
+4325 1038 N 0 198 -20 0 0 -198 h
+4305 1038 N 0 198 -20 0 0 -198 h
+4285 1038 N 0 198 -20 0 0 -198 h
+4265 1038 N 0 198 -20 0 0 -198 h
+4245 1038 N 0 198 -19 0 0 -198 h
+4226 1038 N 0 198 -20 0 0 -198 h
+4206 1038 N 0 198 -20 0 0 -198 h
+4186 1038 N 0 198 -20 0 0 -198 h
+4166 1038 N 0 198 -20 0 0 -198 h
+4146 1038 N 0 198 -19 0 0 -198 h
+4127 1038 N 0 198 -20 0 0 -198 h
+4107 1038 N 0 198 -20 0 0 -198 h
+4087 1038 N 0 198 -20 0 0 -198 h
+4067 1038 N 0 198 -20 0 0 -198 h
+4047 1038 N 0 198 -19 0 0 -198 h
+4028 1038 N 0 198 -20 0 0 -198 h
+4008 1038 N 0 198 -20 0 0 -198 h
+3988 1038 N 0 198 -20 0 0 -198 h
+3968 1038 N 0 198 -20 0 0 -198 h
+3948 1038 N 0 198 -19 0 0 -198 h
+3929 1038 N 0 198 -20 0 0 -198 h
+3909 1038 N 0 198 -20 0 0 -198 h
+3889 1038 N 0 198 -20 0 0 -198 h
+3869 1038 N 0 198 -20 0 0 -198 h
+3849 1038 N 0 198 -19 0 0 -198 h
+3830 1038 N 0 198 -20 0 0 -198 h
+3810 1038 N 0 198 -20 0 0 -198 h
+3790 1038 N 0 198 -20 0 0 -198 h
+3770 1038 N 0 208 -3 0 0 -198 h
+3767 1048 N 0 228 -5 0 0 -208 h
+3762 1068 N 0 247 -3 0 0 -228 h
+3759 1087 N 0 267 -4 0 0 -247 h
+3755 1107 N 0 286 -4 0 0 -267 h
+3751 1126 N 0 287 -1 0 0 -286 h
+3750 1127 N 0 307 -5 0 0 -287 h
+3745 1147 N 0 327 -6 0 0 -307 h
+3739 1167 N 0 346 -7 0 0 -327 h
+3732 1186 N 0 348 -1 0 0 -346 h
+3731 1188 N 0 366 -8 0 0 -348 h
+3723 1206 N 0 386 -10 0 0 -366 h
+3713 1226 N 0 390 -2 0 0 -386 h
+3711 1230 N 0 406 -10 0 0 -390 h
+3701 1246 N 0 422 -10 0 0 -406 h
+3691 1262 N 0 426 -3 0 0 -422 h
+3688 1266 N 0 445 -14 0 0 -426 h
+3674 1285 N 0 448 -3 0 0 -445 h
+3671 1288 N 0 465 -14 0 0 -448 h
+3072 1305 N 0 471 5 0 0 -465 h
+3077 1311 N 0 485 15 0 0 -471 h
+3092 1325 N 0 490 5 0 0 -485 h
+3097 1330 N 0 505 17 0 0 -490 h
+3114 1345 N 0 507 3 0 0 -505 h
+3117 1347 N 0 522 20 0 0 -507 h
+3137 1362 N 0 525 4 0 0 -522 h
+3141 1365 N 0 535 16 0 0 -525 h
+3157 1375 N 0 544 16 0 0 -535 h
+3173 1384 N 0 546 3 0 0 -544 h
+3176 1386 N 0 556 20 0 0 -546 h
+3196 1396 N 0 564 18 0 0 -556 h
+3214 1404 N 0 565 2 0 0 -564 h
+3216 1405 N 0 572 20 0 0 -565 h
+3236 1412 N 0 579 20 0 0 -572 h
+3256 1419 N 0 584 19 0 0 -579 h
+3275 1424 N 0 584 2 0 0 -584 h
+3277 1424 N 0 588 18 0 0 -584 h
+3295 1428 N 0 591 20 0 0 -588 h
+3315 1431 N 0 593 20 0 0 -591 h
+3335 1433 N 0 594 20 0 0 -593 h
+1395 1038 N 0 198 20 0 0 -198 h
+1415 1038 N 0 198 19 0 0 -198 h
+1434 1038 N 0 198 20 0 0 -198 h
+1454 1038 N 0 198 20 0 0 -198 h
+1474 1038 N 0 198 20 0 0 -198 h
+1494 1038 N 0 198 20 0 0 -198 h
+1514 1038 N 0 198 19 0 0 -198 h
+1533 1038 N 0 198 20 0 0 -198 h
+1553 1038 N 0 198 20 0 0 -198 h
+1573 1038 N 0 198 20 0 0 -198 h
+1593 1038 N 0 198 20 0 0 -198 h
+1613 1038 N 0 198 19 0 0 -198 h
+1632 1038 N 0 198 20 0 0 -198 h
+1652 1038 N 0 198 20 0 0 -198 h
+1672 1038 N 0 198 20 0 0 -198 h
+1692 1038 N 0 198 20 0 0 -198 h
+1712 1038 N 0 198 19 0 0 -198 h
+1731 1038 N 0 198 20 0 0 -198 h
+1751 1038 N 0 198 20 0 0 -198 h
+1771 1038 N 0 198 20 0 0 -198 h
+1791 1038 N 0 198 20 0 0 -198 h
+1811 1038 N 0 198 19 0 0 -198 h
+1830 1038 N 0 198 20 0 0 -198 h
+1850 1038 N 0 198 20 0 0 -198 h
+1870 1038 N 0 198 20 0 0 -198 h
+1890 1038 N 0 198 20 0 0 -198 h
+1910 1038 N 0 198 19 0 0 -198 h
+1929 1038 N 0 198 20 0 0 -198 h
+1949 1038 N 0 198 20 0 0 -198 h
+1969 1038 N 0 198 20 0 0 -198 h
+1989 1038 N 0 198 20 0 0 -198 h
+2009 1038 N 0 198 19 0 0 -198 h
+2028 1038 N 0 198 20 0 0 -198 h
+2048 1038 N 0 198 20 0 0 -198 h
+2068 1038 N 0 198 20 0 0 -198 h
+2088 1038 N 0 198 20 0 0 -198 h
+2108 1038 N 0 198 19 0 0 -198 h
+2127 1038 N 0 198 20 0 0 -198 h
+2147 1038 N 0 198 20 0 0 -198 h
+2167 1038 N 0 198 20 0 0 -198 h
+2187 1038 N 0 198 19 0 0 -198 h
+2206 1038 N 0 198 20 0 0 -198 h
+2226 1038 N 0 198 20 0 0 -198 h
+2246 1038 N 0 198 20 0 0 -198 h
+2266 1038 N 0 198 20 0 0 -198 h
+2286 1038 N 0 198 19 0 0 -198 h
+2305 1038 N 0 198 20 0 0 -198 h
+2325 1038 N 0 198 20 0 0 -198 h
+2345 1038 N 0 198 20 0 0 -198 h
+2365 1038 N 0 198 20 0 0 -198 h
+2385 1038 N 0 198 19 0 0 -198 h
+2404 1038 N 0 198 20 0 0 -198 h
+2424 1038 N 0 198 20 0 0 -198 h
+2444 1038 N 0 198 20 0 0 -198 h
+2464 1038 N 0 198 20 0 0 -198 h
+2484 1038 N 0 198 19 0 0 -198 h
+2503 1038 N 0 198 20 0 0 -198 h
+2523 1038 N 0 198 20 0 0 -198 h
+2543 1038 N 0 198 20 0 0 -198 h
+2563 1038 N 0 198 20 0 0 -198 h
+2583 1038 N 0 198 19 0 0 -198 h
+2602 1038 N 0 198 20 0 0 -198 h
+2622 1038 N 0 198 20 0 0 -198 h
+2642 1038 N 0 198 20 0 0 -198 h
+2662 1038 N 0 198 20 0 0 -198 h
+2682 1038 N 0 198 19 0 0 -198 h
+2701 1038 N 0 198 20 0 0 -198 h
+2721 1038 N 0 198 20 0 0 -198 h
+2741 1038 N 0 198 20 0 0 -198 h
+2761 1038 N 0 198 20 0 0 -198 h
+2781 1038 N 0 198 19 0 0 -198 h
+2800 1038 N 0 198 20 0 0 -198 h
+2820 1038 N 0 198 20 0 0 -198 h
+2840 1038 N 0 198 20 0 0 -198 h
+2860 1038 N 0 198 20 0 0 -198 h
+2880 1038 N 0 198 19 0 0 -198 h
+2899 1038 N 0 198 20 0 0 -198 h
+2919 1038 N 0 198 20 0 0 -198 h
+2939 1038 N 0 198 20 0 0 -198 h
+2959 1038 N 0 208 3 0 0 -198 h
+2962 1048 N 0 228 5 0 0 -208 h
+2967 1068 N 0 247 3 0 0 -228 h
+2970 1087 N 0 267 4 0 0 -247 h
+2974 1107 N 0 286 4 0 0 -267 h
+2978 1126 N 0 287 1 0 0 -286 h
+2979 1127 N 0 307 5 0 0 -287 h
+2984 1147 N 0 327 6 0 0 -307 h
+2990 1167 N 0 346 7 0 0 -327 h
+2997 1186 N 0 348 1 0 0 -346 h
+2998 1188 N 0 366 8 0 0 -348 h
+3006 1206 N 0 386 10 0 0 -366 h
+3016 1226 N 0 390 2 0 0 -386 h
+3018 1230 N 0 406 10 0 0 -390 h
+3028 1246 N 0 422 10 0 0 -406 h
+3038 1262 N 0 426 3 0 0 -422 h
+3041 1266 N 0 445 14 0 0 -426 h
+3055 1285 N 0 448 3 0 0 -445 h
+3058 1288 N 0 465 14 0 0 -448 h
+% End plot #4
+% Begin plot #5
+1.000 UL
+LTb
+1.00 1.00 1.00 C /Helvetica findfont 200 scalefont setfont
+3657 1305 N 0 471 -5 0 0 -465 h
+3652 1311 N 0 485 -15 0 0 -471 h
+3637 1325 N 0 490 -5 0 0 -485 h
+3632 1330 N 0 505 -17 0 0 -490 h
+3615 1345 N 0 507 -3 0 0 -505 h
+3612 1347 N 0 522 -20 0 0 -507 h
+3592 1362 N 0 525 -4 0 0 -522 h
+3588 1365 N 0 535 -16 0 0 -525 h
+3572 1375 N 0 544 -16 0 0 -535 h
+3556 1384 N 0 546 -3 0 0 -544 h
+3553 1386 N 0 556 -20 0 0 -546 h
+3533 1396 N 0 564 -18 0 0 -556 h
+3515 1404 N 0 565 -2 0 0 -564 h
+3513 1405 N 0 572 -20 0 0 -565 h
+3493 1412 N 0 579 -20 0 0 -572 h
+3473 1419 N 0 584 -19 0 0 -579 h
+3454 1424 N 0 584 -2 0 0 -584 h
+3452 1424 N 0 588 -18 0 0 -584 h
+3434 1428 N 0 591 -20 0 0 -588 h
+3414 1431 N 0 593 -20 0 0 -591 h
+3394 1433 N 0 594 -20 0 0 -593 h
+5334 1038 N 0 198 -20 0 0 -198 h
+5314 1038 N 0 198 -19 0 0 -198 h
+5295 1038 N 0 198 -20 0 0 -198 h
+5275 1038 N 0 198 -20 0 0 -198 h
+5255 1038 N 0 198 -20 0 0 -198 h
+5235 1038 N 0 198 -20 0 0 -198 h
+5215 1038 N 0 198 -19 0 0 -198 h
+5196 1038 N 0 198 -20 0 0 -198 h
+5176 1038 N 0 198 -20 0 0 -198 h
+5156 1038 N 0 198 -20 0 0 -198 h
+5136 1038 N 0 198 -20 0 0 -198 h
+5116 1038 N 0 198 -19 0 0 -198 h
+5097 1038 N 0 198 -20 0 0 -198 h
+5077 1038 N 0 198 -20 0 0 -198 h
+5057 1038 N 0 198 -20 0 0 -198 h
+5037 1038 N 0 198 -20 0 0 -198 h
+5017 1038 N 0 198 -19 0 0 -198 h
+4998 1038 N 0 198 -20 0 0 -198 h
+4978 1038 N 0 198 -20 0 0 -198 h
+4958 1038 N 0 198 -20 0 0 -198 h
+4938 1038 N 0 198 -20 0 0 -198 h
+4918 1038 N 0 198 -19 0 0 -198 h
+4899 1038 N 0 198 -20 0 0 -198 h
+4879 1038 N 0 198 -20 0 0 -198 h
+4859 1038 N 0 198 -20 0 0 -198 h
+4839 1038 N 0 198 -20 0 0 -198 h
+4819 1038 N 0 198 -19 0 0 -198 h
+4800 1038 N 0 198 -20 0 0 -198 h
+4780 1038 N 0 198 -20 0 0 -198 h
+4760 1038 N 0 198 -20 0 0 -198 h
+4740 1038 N 0 198 -20 0 0 -198 h
+4720 1038 N 0 198 -19 0 0 -198 h
+4701 1038 N 0 198 -20 0 0 -198 h
+4681 1038 N 0 198 -20 0 0 -198 h
+4661 1038 N 0 198 -20 0 0 -198 h
+4641 1038 N 0 198 -20 0 0 -198 h
+4621 1038 N 0 198 -19 0 0 -198 h
+4602 1038 N 0 198 -20 0 0 -198 h
+4582 1038 N 0 198 -20 0 0 -198 h
+4562 1038 N 0 198 -20 0 0 -198 h
+4542 1038 N 0 198 -19 0 0 -198 h
+4523 1038 N 0 198 -20 0 0 -198 h
+4503 1038 N 0 198 -20 0 0 -198 h
+4483 1038 N 0 198 -20 0 0 -198 h
+4463 1038 N 0 198 -20 0 0 -198 h
+4443 1038 N 0 198 -19 0 0 -198 h
+4424 1038 N 0 198 -20 0 0 -198 h
+4404 1038 N 0 198 -20 0 0 -198 h
+4384 1038 N 0 198 -20 0 0 -198 h
+4364 1038 N 0 198 -20 0 0 -198 h
+4344 1038 N 0 198 -19 0 0 -198 h
+4325 1038 N 0 198 -20 0 0 -198 h
+4305 1038 N 0 198 -20 0 0 -198 h
+4285 1038 N 0 198 -20 0 0 -198 h
+4265 1038 N 0 198 -20 0 0 -198 h
+4245 1038 N 0 198 -19 0 0 -198 h
+4226 1038 N 0 198 -20 0 0 -198 h
+4206 1038 N 0 198 -20 0 0 -198 h
+4186 1038 N 0 198 -20 0 0 -198 h
+4166 1038 N 0 198 -20 0 0 -198 h
+4146 1038 N 0 198 -19 0 0 -198 h
+4127 1038 N 0 198 -20 0 0 -198 h
+4107 1038 N 0 198 -20 0 0 -198 h
+4087 1038 N 0 198 -20 0 0 -198 h
+4067 1038 N 0 198 -20 0 0 -198 h
+4047 1038 N 0 198 -19 0 0 -198 h
+4028 1038 N 0 198 -20 0 0 -198 h
+4008 1038 N 0 198 -20 0 0 -198 h
+3988 1038 N 0 198 -20 0 0 -198 h
+3968 1038 N 0 198 -20 0 0 -198 h
+3948 1038 N 0 198 -19 0 0 -198 h
+3929 1038 N 0 198 -20 0 0 -198 h
+3909 1038 N 0 198 -20 0 0 -198 h
+3889 1038 N 0 198 -20 0 0 -198 h
+3869 1038 N 0 198 -20 0 0 -198 h
+3849 1038 N 0 198 -19 0 0 -198 h
+3830 1038 N 0 198 -20 0 0 -198 h
+3810 1038 N 0 198 -20 0 0 -198 h
+3790 1038 N 0 198 -20 0 0 -198 h
+3770 1038 N 0 208 -3 0 0 -198 h
+3767 1048 N 0 228 -5 0 0 -208 h
+3762 1068 N 0 247 -3 0 0 -228 h
+3759 1087 N 0 267 -4 0 0 -247 h
+3755 1107 N 0 286 -4 0 0 -267 h
+3751 1126 N 0 287 -1 0 0 -286 h
+3750 1127 N 0 307 -5 0 0 -287 h
+3745 1147 N 0 327 -6 0 0 -307 h
+3739 1167 N 0 346 -7 0 0 -327 h
+3732 1186 N 0 348 -1 0 0 -346 h
+3731 1188 N 0 366 -8 0 0 -348 h
+3723 1206 N 0 386 -10 0 0 -366 h
+3713 1226 N 0 390 -2 0 0 -386 h
+3711 1230 N 0 406 -10 0 0 -390 h
+3701 1246 N 0 422 -10 0 0 -406 h
+3691 1262 N 0 426 -3 0 0 -422 h
+3688 1266 N 0 445 -14 0 0 -426 h
+3674 1285 N 0 448 -3 0 0 -445 h
+3671 1288 N 0 465 -14 0 0 -448 h
+3072 1305 N 0 471 5 0 0 -465 h
+3077 1311 N 0 485 15 0 0 -471 h
+3092 1325 N 0 490 5 0 0 -485 h
+3097 1330 N 0 505 17 0 0 -490 h
+3114 1345 N 0 507 3 0 0 -505 h
+3117 1347 N 0 522 20 0 0 -507 h
+3137 1362 N 0 525 4 0 0 -522 h
+3141 1365 N 0 535 16 0 0 -525 h
+3157 1375 N 0 544 16 0 0 -535 h
+3173 1384 N 0 546 3 0 0 -544 h
+3176 1386 N 0 556 20 0 0 -546 h
+3196 1396 N 0 564 18 0 0 -556 h
+3214 1404 N 0 565 2 0 0 -564 h
+3216 1405 N 0 572 20 0 0 -565 h
+3236 1412 N 0 579 20 0 0 -572 h
+3256 1419 N 0 584 19 0 0 -579 h
+3275 1424 N 0 584 2 0 0 -584 h
+3277 1424 N 0 588 18 0 0 -584 h
+3295 1428 N 0 591 20 0 0 -588 h
+3315 1431 N 0 593 20 0 0 -591 h
+3335 1433 N 0 594 20 0 0 -593 h
+1395 1038 N 0 198 20 0 0 -198 h
+1415 1038 N 0 198 19 0 0 -198 h
+1434 1038 N 0 198 20 0 0 -198 h
+1454 1038 N 0 198 20 0 0 -198 h
+1474 1038 N 0 198 20 0 0 -198 h
+1494 1038 N 0 198 20 0 0 -198 h
+1514 1038 N 0 198 19 0 0 -198 h
+1533 1038 N 0 198 20 0 0 -198 h
+1553 1038 N 0 198 20 0 0 -198 h
+1573 1038 N 0 198 20 0 0 -198 h
+1593 1038 N 0 198 20 0 0 -198 h
+1613 1038 N 0 198 19 0 0 -198 h
+1632 1038 N 0 198 20 0 0 -198 h
+1652 1038 N 0 198 20 0 0 -198 h
+1672 1038 N 0 198 20 0 0 -198 h
+1692 1038 N 0 198 20 0 0 -198 h
+1712 1038 N 0 198 19 0 0 -198 h
+1731 1038 N 0 198 20 0 0 -198 h
+1751 1038 N 0 198 20 0 0 -198 h
+1771 1038 N 0 198 20 0 0 -198 h
+1791 1038 N 0 198 20 0 0 -198 h
+1811 1038 N 0 198 19 0 0 -198 h
+1830 1038 N 0 198 20 0 0 -198 h
+1850 1038 N 0 198 20 0 0 -198 h
+1870 1038 N 0 198 20 0 0 -198 h
+1890 1038 N 0 198 20 0 0 -198 h
+1910 1038 N 0 198 19 0 0 -198 h
+1929 1038 N 0 198 20 0 0 -198 h
+1949 1038 N 0 198 20 0 0 -198 h
+1969 1038 N 0 198 20 0 0 -198 h
+1989 1038 N 0 198 20 0 0 -198 h
+2009 1038 N 0 198 19 0 0 -198 h
+2028 1038 N 0 198 20 0 0 -198 h
+2048 1038 N 0 198 20 0 0 -198 h
+2068 1038 N 0 198 20 0 0 -198 h
+2088 1038 N 0 198 20 0 0 -198 h
+2108 1038 N 0 198 19 0 0 -198 h
+2127 1038 N 0 198 20 0 0 -198 h
+2147 1038 N 0 198 20 0 0 -198 h
+2167 1038 N 0 198 20 0 0 -198 h
+2187 1038 N 0 198 19 0 0 -198 h
+2206 1038 N 0 198 20 0 0 -198 h
+2226 1038 N 0 198 20 0 0 -198 h
+2246 1038 N 0 198 20 0 0 -198 h
+2266 1038 N 0 198 20 0 0 -198 h
+2286 1038 N 0 198 19 0 0 -198 h
+2305 1038 N 0 198 20 0 0 -198 h
+2325 1038 N 0 198 20 0 0 -198 h
+2345 1038 N 0 198 20 0 0 -198 h
+2365 1038 N 0 198 20 0 0 -198 h
+2385 1038 N 0 198 19 0 0 -198 h
+2404 1038 N 0 198 20 0 0 -198 h
+2424 1038 N 0 198 20 0 0 -198 h
+2444 1038 N 0 198 20 0 0 -198 h
+2464 1038 N 0 198 20 0 0 -198 h
+2484 1038 N 0 198 19 0 0 -198 h
+2503 1038 N 0 198 20 0 0 -198 h
+2523 1038 N 0 198 20 0 0 -198 h
+2543 1038 N 0 198 20 0 0 -198 h
+2563 1038 N 0 198 20 0 0 -198 h
+2583 1038 N 0 198 19 0 0 -198 h
+2602 1038 N 0 198 20 0 0 -198 h
+2622 1038 N 0 198 20 0 0 -198 h
+2642 1038 N 0 198 20 0 0 -198 h
+2662 1038 N 0 198 20 0 0 -198 h
+2682 1038 N 0 198 19 0 0 -198 h
+2701 1038 N 0 198 20 0 0 -198 h
+2721 1038 N 0 198 20 0 0 -198 h
+2741 1038 N 0 198 20 0 0 -198 h
+2761 1038 N 0 198 20 0 0 -198 h
+2781 1038 N 0 198 19 0 0 -198 h
+2800 1038 N 0 198 20 0 0 -198 h
+2820 1038 N 0 198 20 0 0 -198 h
+2840 1038 N 0 198 20 0 0 -198 h
+2860 1038 N 0 198 20 0 0 -198 h
+2880 1038 N 0 198 19 0 0 -198 h
+2899 1038 N 0 198 20 0 0 -198 h
+2919 1038 N 0 198 20 0 0 -198 h
+2939 1038 N 0 198 20 0 0 -198 h
+2959 1038 N 0 208 3 0 0 -198 h
+2962 1048 N 0 228 5 0 0 -208 h
+2967 1068 N 0 247 3 0 0 -228 h
+2970 1087 N 0 267 4 0 0 -247 h
+2974 1107 N 0 286 4 0 0 -267 h
+2978 1126 N 0 287 1 0 0 -286 h
+2979 1127 N 0 307 5 0 0 -287 h
+2984 1147 N 0 327 6 0 0 -307 h
+2990 1167 N 0 346 7 0 0 -327 h
+2997 1186 N 0 348 1 0 0 -346 h
+2998 1188 N 0 366 8 0 0 -348 h
+3006 1206 N 0 386 10 0 0 -366 h
+3016 1226 N 0 390 2 0 0 -386 h
+3018 1230 N 0 406 10 0 0 -390 h
+3028 1246 N 0 422 10 0 0 -406 h
+3038 1262 N 0 426 3 0 0 -422 h
+3041 1266 N 0 445 14 0 0 -426 h
+3055 1285 N 0 448 3 0 0 -445 h
+3058 1288 N 0 465 14 0 0 -448 h
+% End plot #5
+% Begin plot #6
+1.000 UL
+LTb
+1.00 1.00 1.00 C /Helvetica findfont 200 scalefont setfont
+3657 1305 N 0 471 -5 0 0 -465 h
+3652 1311 N 0 485 -15 0 0 -471 h
+3637 1325 N 0 490 -5 0 0 -485 h
+3632 1330 N 0 505 -17 0 0 -490 h
+3615 1345 N 0 507 -3 0 0 -505 h
+3612 1347 N 0 522 -20 0 0 -507 h
+3592 1362 N 0 525 -4 0 0 -522 h
+3588 1365 N 0 535 -16 0 0 -525 h
+3572 1375 N 0 544 -16 0 0 -535 h
+3556 1384 N 0 546 -3 0 0 -544 h
+3553 1386 N 0 556 -20 0 0 -546 h
+3533 1396 N 0 564 -18 0 0 -556 h
+3515 1404 N 0 565 -2 0 0 -564 h
+3513 1405 N 0 572 -20 0 0 -565 h
+3493 1412 N 0 579 -20 0 0 -572 h
+3473 1419 N 0 584 -19 0 0 -579 h
+3454 1424 N 0 584 -2 0 0 -584 h
+3452 1424 N 0 588 -18 0 0 -584 h
+3434 1428 N 0 591 -20 0 0 -588 h
+3414 1431 N 0 593 -20 0 0 -591 h
+3394 1433 N 0 594 -20 0 0 -593 h
+5334 1038 N 0 198 -20 0 0 -198 h
+5314 1038 N 0 198 -19 0 0 -198 h
+5295 1038 N 0 198 -20 0 0 -198 h
+5275 1038 N 0 198 -20 0 0 -198 h
+5255 1038 N 0 198 -20 0 0 -198 h
+5235 1038 N 0 198 -20 0 0 -198 h
+5215 1038 N 0 198 -19 0 0 -198 h
+5196 1038 N 0 198 -20 0 0 -198 h
+5176 1038 N 0 198 -20 0 0 -198 h
+5156 1038 N 0 198 -20 0 0 -198 h
+5136 1038 N 0 198 -20 0 0 -198 h
+5116 1038 N 0 198 -19 0 0 -198 h
+5097 1038 N 0 198 -20 0 0 -198 h
+5077 1038 N 0 198 -20 0 0 -198 h
+5057 1038 N 0 198 -20 0 0 -198 h
+5037 1038 N 0 198 -20 0 0 -198 h
+5017 1038 N 0 198 -19 0 0 -198 h
+4998 1038 N 0 198 -20 0 0 -198 h
+4978 1038 N 0 198 -20 0 0 -198 h
+4958 1038 N 0 198 -20 0 0 -198 h
+4938 1038 N 0 198 -20 0 0 -198 h
+4918 1038 N 0 198 -19 0 0 -198 h
+4899 1038 N 0 198 -20 0 0 -198 h
+4879 1038 N 0 198 -20 0 0 -198 h
+4859 1038 N 0 198 -20 0 0 -198 h
+4839 1038 N 0 198 -20 0 0 -198 h
+4819 1038 N 0 198 -19 0 0 -198 h
+4800 1038 N 0 198 -20 0 0 -198 h
+4780 1038 N 0 198 -20 0 0 -198 h
+4760 1038 N 0 198 -20 0 0 -198 h
+4740 1038 N 0 198 -20 0 0 -198 h
+4720 1038 N 0 198 -19 0 0 -198 h
+4701 1038 N 0 198 -20 0 0 -198 h
+4681 1038 N 0 198 -20 0 0 -198 h
+4661 1038 N 0 198 -20 0 0 -198 h
+4641 1038 N 0 198 -20 0 0 -198 h
+4621 1038 N 0 198 -19 0 0 -198 h
+4602 1038 N 0 198 -20 0 0 -198 h
+4582 1038 N 0 198 -20 0 0 -198 h
+4562 1038 N 0 198 -20 0 0 -198 h
+4542 1038 N 0 198 -19 0 0 -198 h
+4523 1038 N 0 198 -20 0 0 -198 h
+4503 1038 N 0 198 -20 0 0 -198 h
+4483 1038 N 0 198 -20 0 0 -198 h
+4463 1038 N 0 198 -20 0 0 -198 h
+4443 1038 N 0 198 -19 0 0 -198 h
+4424 1038 N 0 198 -20 0 0 -198 h
+4404 1038 N 0 198 -20 0 0 -198 h
+4384 1038 N 0 198 -20 0 0 -198 h
+4364 1038 N 0 198 -20 0 0 -198 h
+4344 1038 N 0 198 -19 0 0 -198 h
+4325 1038 N 0 198 -20 0 0 -198 h
+4305 1038 N 0 198 -20 0 0 -198 h
+4285 1038 N 0 198 -20 0 0 -198 h
+4265 1038 N 0 198 -20 0 0 -198 h
+4245 1038 N 0 198 -19 0 0 -198 h
+4226 1038 N 0 198 -20 0 0 -198 h
+4206 1038 N 0 198 -20 0 0 -198 h
+4186 1038 N 0 198 -20 0 0 -198 h
+4166 1038 N 0 198 -20 0 0 -198 h
+4146 1038 N 0 198 -19 0 0 -198 h
+4127 1038 N 0 198 -20 0 0 -198 h
+4107 1038 N 0 198 -20 0 0 -198 h
+4087 1038 N 0 198 -20 0 0 -198 h
+4067 1038 N 0 198 -20 0 0 -198 h
+4047 1038 N 0 198 -19 0 0 -198 h
+4028 1038 N 0 198 -20 0 0 -198 h
+4008 1038 N 0 198 -20 0 0 -198 h
+3988 1038 N 0 198 -20 0 0 -198 h
+3968 1038 N 0 198 -20 0 0 -198 h
+3948 1038 N 0 198 -19 0 0 -198 h
+3929 1038 N 0 198 -20 0 0 -198 h
+3909 1038 N 0 198 -20 0 0 -198 h
+3889 1038 N 0 198 -20 0 0 -198 h
+3869 1038 N 0 198 -20 0 0 -198 h
+3849 1038 N 0 198 -19 0 0 -198 h
+3830 1038 N 0 198 -20 0 0 -198 h
+3810 1038 N 0 198 -20 0 0 -198 h
+3790 1038 N 0 198 -20 0 0 -198 h
+3770 1038 N 0 208 -3 0 0 -198 h
+3767 1048 N 0 228 -5 0 0 -208 h
+3762 1068 N 0 247 -3 0 0 -228 h
+3759 1087 N 0 267 -4 0 0 -247 h
+3755 1107 N 0 286 -4 0 0 -267 h
+3751 1126 N 0 287 -1 0 0 -286 h
+3750 1127 N 0 307 -5 0 0 -287 h
+3745 1147 N 0 327 -6 0 0 -307 h
+3739 1167 N 0 346 -7 0 0 -327 h
+3732 1186 N 0 348 -1 0 0 -346 h
+3731 1188 N 0 366 -8 0 0 -348 h
+3723 1206 N 0 386 -10 0 0 -366 h
+3713 1226 N 0 390 -2 0 0 -386 h
+3711 1230 N 0 406 -10 0 0 -390 h
+3701 1246 N 0 422 -10 0 0 -406 h
+3691 1262 N 0 426 -3 0 0 -422 h
+3688 1266 N 0 445 -14 0 0 -426 h
+3674 1285 N 0 448 -3 0 0 -445 h
+3671 1288 N 0 465 -14 0 0 -448 h
+3072 1305 N 0 471 5 0 0 -465 h
+3077 1311 N 0 485 15 0 0 -471 h
+3092 1325 N 0 490 5 0 0 -485 h
+3097 1330 N 0 505 17 0 0 -490 h
+3114 1345 N 0 507 3 0 0 -505 h
+3117 1347 N 0 522 20 0 0 -507 h
+3137 1362 N 0 525 4 0 0 -522 h
+3141 1365 N 0 535 16 0 0 -525 h
+3157 1375 N 0 544 16 0 0 -535 h
+3173 1384 N 0 546 3 0 0 -544 h
+3176 1386 N 0 556 20 0 0 -546 h
+3196 1396 N 0 564 18 0 0 -556 h
+3214 1404 N 0 565 2 0 0 -564 h
+3216 1405 N 0 572 20 0 0 -565 h
+3236 1412 N 0 579 20 0 0 -572 h
+3256 1419 N 0 584 19 0 0 -579 h
+3275 1424 N 0 584 2 0 0 -584 h
+3277 1424 N 0 588 18 0 0 -584 h
+3295 1428 N 0 591 20 0 0 -588 h
+3315 1431 N 0 593 20 0 0 -591 h
+3335 1433 N 0 594 20 0 0 -593 h
+1395 1038 N 0 198 20 0 0 -198 h
+1415 1038 N 0 198 19 0 0 -198 h
+1434 1038 N 0 198 20 0 0 -198 h
+1454 1038 N 0 198 20 0 0 -198 h
+1474 1038 N 0 198 20 0 0 -198 h
+1494 1038 N 0 198 20 0 0 -198 h
+1514 1038 N 0 198 19 0 0 -198 h
+1533 1038 N 0 198 20 0 0 -198 h
+1553 1038 N 0 198 20 0 0 -198 h
+1573 1038 N 0 198 20 0 0 -198 h
+1593 1038 N 0 198 20 0 0 -198 h
+1613 1038 N 0 198 19 0 0 -198 h
+1632 1038 N 0 198 20 0 0 -198 h
+1652 1038 N 0 198 20 0 0 -198 h
+1672 1038 N 0 198 20 0 0 -198 h
+1692 1038 N 0 198 20 0 0 -198 h
+1712 1038 N 0 198 19 0 0 -198 h
+1731 1038 N 0 198 20 0 0 -198 h
+1751 1038 N 0 198 20 0 0 -198 h
+1771 1038 N 0 198 20 0 0 -198 h
+1791 1038 N 0 198 20 0 0 -198 h
+1811 1038 N 0 198 19 0 0 -198 h
+1830 1038 N 0 198 20 0 0 -198 h
+1850 1038 N 0 198 20 0 0 -198 h
+1870 1038 N 0 198 20 0 0 -198 h
+1890 1038 N 0 198 20 0 0 -198 h
+1910 1038 N 0 198 19 0 0 -198 h
+1929 1038 N 0 198 20 0 0 -198 h
+1949 1038 N 0 198 20 0 0 -198 h
+1969 1038 N 0 198 20 0 0 -198 h
+1989 1038 N 0 198 20 0 0 -198 h
+2009 1038 N 0 198 19 0 0 -198 h
+2028 1038 N 0 198 20 0 0 -198 h
+2048 1038 N 0 198 20 0 0 -198 h
+2068 1038 N 0 198 20 0 0 -198 h
+2088 1038 N 0 198 20 0 0 -198 h
+2108 1038 N 0 198 19 0 0 -198 h
+2127 1038 N 0 198 20 0 0 -198 h
+2147 1038 N 0 198 20 0 0 -198 h
+2167 1038 N 0 198 20 0 0 -198 h
+2187 1038 N 0 198 19 0 0 -198 h
+2206 1038 N 0 198 20 0 0 -198 h
+2226 1038 N 0 198 20 0 0 -198 h
+2246 1038 N 0 198 20 0 0 -198 h
+2266 1038 N 0 198 20 0 0 -198 h
+2286 1038 N 0 198 19 0 0 -198 h
+2305 1038 N 0 198 20 0 0 -198 h
+2325 1038 N 0 198 20 0 0 -198 h
+2345 1038 N 0 198 20 0 0 -198 h
+2365 1038 N 0 198 20 0 0 -198 h
+2385 1038 N 0 198 19 0 0 -198 h
+2404 1038 N 0 198 20 0 0 -198 h
+2424 1038 N 0 198 20 0 0 -198 h
+2444 1038 N 0 198 20 0 0 -198 h
+2464 1038 N 0 198 20 0 0 -198 h
+2484 1038 N 0 198 19 0 0 -198 h
+2503 1038 N 0 198 20 0 0 -198 h
+2523 1038 N 0 198 20 0 0 -198 h
+2543 1038 N 0 198 20 0 0 -198 h
+2563 1038 N 0 198 20 0 0 -198 h
+2583 1038 N 0 198 19 0 0 -198 h
+2602 1038 N 0 198 20 0 0 -198 h
+2622 1038 N 0 198 20 0 0 -198 h
+2642 1038 N 0 198 20 0 0 -198 h
+2662 1038 N 0 198 20 0 0 -198 h
+2682 1038 N 0 198 19 0 0 -198 h
+2701 1038 N 0 198 20 0 0 -198 h
+2721 1038 N 0 198 20 0 0 -198 h
+2741 1038 N 0 198 20 0 0 -198 h
+2761 1038 N 0 198 20 0 0 -198 h
+2781 1038 N 0 198 19 0 0 -198 h
+2800 1038 N 0 198 20 0 0 -198 h
+2820 1038 N 0 198 20 0 0 -198 h
+2840 1038 N 0 198 20 0 0 -198 h
+2860 1038 N 0 198 20 0 0 -198 h
+2880 1038 N 0 198 19 0 0 -198 h
+2899 1038 N 0 198 20 0 0 -198 h
+2919 1038 N 0 198 20 0 0 -198 h
+2939 1038 N 0 198 20 0 0 -198 h
+2959 1038 N 0 208 3 0 0 -198 h
+2962 1048 N 0 228 5 0 0 -208 h
+2967 1068 N 0 247 3 0 0 -228 h
+2970 1087 N 0 267 4 0 0 -247 h
+2974 1107 N 0 286 4 0 0 -267 h
+2978 1126 N 0 287 1 0 0 -286 h
+2979 1127 N 0 307 5 0 0 -287 h
+2984 1147 N 0 327 6 0 0 -307 h
+2990 1167 N 0 346 7 0 0 -327 h
+2997 1186 N 0 348 1 0 0 -346 h
+2998 1188 N 0 366 8 0 0 -348 h
+3006 1206 N 0 386 10 0 0 -366 h
+3016 1226 N 0 390 2 0 0 -386 h
+3018 1230 N 0 406 10 0 0 -390 h
+3028 1246 N 0 422 10 0 0 -406 h
+3038 1262 N 0 426 3 0 0 -422 h
+3041 1266 N 0 445 14 0 0 -426 h
+3055 1285 N 0 448 3 0 0 -445 h
+3058 1288 N 0 465 14 0 0 -448 h
+% End plot #6
+% Begin plot #7
+1.000 UL
+LTb
+1.00 1.00 1.00 C /Helvetica findfont 200 scalefont setfont
+3657 1305 N 0 471 -5 0 0 -465 h
+3652 1311 N 0 485 -15 0 0 -471 h
+3637 1325 N 0 490 -5 0 0 -485 h
+3632 1330 N 0 505 -17 0 0 -490 h
+3615 1345 N 0 507 -3 0 0 -505 h
+3612 1347 N 0 522 -20 0 0 -507 h
+3592 1362 N 0 525 -4 0 0 -522 h
+3588 1365 N 0 535 -16 0 0 -525 h
+3572 1375 N 0 544 -16 0 0 -535 h
+3556 1384 N 0 546 -3 0 0 -544 h
+3553 1386 N 0 556 -20 0 0 -546 h
+3533 1396 N 0 564 -18 0 0 -556 h
+3515 1404 N 0 565 -2 0 0 -564 h
+3513 1405 N 0 572 -20 0 0 -565 h
+3493 1412 N 0 579 -20 0 0 -572 h
+3473 1419 N 0 584 -19 0 0 -579 h
+3454 1424 N 0 584 -2 0 0 -584 h
+3452 1424 N 0 588 -18 0 0 -584 h
+3434 1428 N 0 591 -20 0 0 -588 h
+3414 1431 N 0 593 -20 0 0 -591 h
+3394 1433 N 0 594 -20 0 0 -593 h
+5334 1038 N 0 198 -20 0 0 -198 h
+5314 1038 N 0 198 -19 0 0 -198 h
+5295 1038 N 0 198 -20 0 0 -198 h
+5275 1038 N 0 198 -20 0 0 -198 h
+5255 1038 N 0 198 -20 0 0 -198 h
+5235 1038 N 0 198 -20 0 0 -198 h
+5215 1038 N 0 198 -19 0 0 -198 h
+5196 1038 N 0 198 -20 0 0 -198 h
+5176 1038 N 0 198 -20 0 0 -198 h
+5156 1038 N 0 198 -20 0 0 -198 h
+5136 1038 N 0 198 -20 0 0 -198 h
+5116 1038 N 0 198 -19 0 0 -198 h
+5097 1038 N 0 198 -20 0 0 -198 h
+5077 1038 N 0 198 -20 0 0 -198 h
+5057 1038 N 0 198 -20 0 0 -198 h
+5037 1038 N 0 198 -20 0 0 -198 h
+5017 1038 N 0 198 -19 0 0 -198 h
+4998 1038 N 0 198 -20 0 0 -198 h
+4978 1038 N 0 198 -20 0 0 -198 h
+4958 1038 N 0 198 -20 0 0 -198 h
+4938 1038 N 0 198 -20 0 0 -198 h
+4918 1038 N 0 198 -19 0 0 -198 h
+4899 1038 N 0 198 -20 0 0 -198 h
+4879 1038 N 0 198 -20 0 0 -198 h
+4859 1038 N 0 198 -20 0 0 -198 h
+4839 1038 N 0 198 -20 0 0 -198 h
+4819 1038 N 0 198 -19 0 0 -198 h
+4800 1038 N 0 198 -20 0 0 -198 h
+4780 1038 N 0 198 -20 0 0 -198 h
+4760 1038 N 0 198 -20 0 0 -198 h
+4740 1038 N 0 198 -20 0 0 -198 h
+4720 1038 N 0 198 -19 0 0 -198 h
+4701 1038 N 0 198 -20 0 0 -198 h
+4681 1038 N 0 198 -20 0 0 -198 h
+4661 1038 N 0 198 -20 0 0 -198 h
+4641 1038 N 0 198 -20 0 0 -198 h
+4621 1038 N 0 198 -19 0 0 -198 h
+4602 1038 N 0 198 -20 0 0 -198 h
+4582 1038 N 0 198 -20 0 0 -198 h
+4562 1038 N 0 198 -20 0 0 -198 h
+4542 1038 N 0 198 -19 0 0 -198 h
+4523 1038 N 0 198 -20 0 0 -198 h
+4503 1038 N 0 198 -20 0 0 -198 h
+4483 1038 N 0 198 -20 0 0 -198 h
+4463 1038 N 0 198 -20 0 0 -198 h
+4443 1038 N 0 198 -19 0 0 -198 h
+4424 1038 N 0 198 -20 0 0 -198 h
+4404 1038 N 0 198 -20 0 0 -198 h
+4384 1038 N 0 198 -20 0 0 -198 h
+4364 1038 N 0 198 -20 0 0 -198 h
+4344 1038 N 0 198 -19 0 0 -198 h
+4325 1038 N 0 198 -20 0 0 -198 h
+4305 1038 N 0 198 -20 0 0 -198 h
+4285 1038 N 0 198 -20 0 0 -198 h
+4265 1038 N 0 198 -20 0 0 -198 h
+4245 1038 N 0 198 -19 0 0 -198 h
+4226 1038 N 0 198 -20 0 0 -198 h
+4206 1038 N 0 198 -20 0 0 -198 h
+4186 1038 N 0 198 -20 0 0 -198 h
+4166 1038 N 0 198 -20 0 0 -198 h
+4146 1038 N 0 198 -19 0 0 -198 h
+4127 1038 N 0 198 -20 0 0 -198 h
+4107 1038 N 0 198 -20 0 0 -198 h
+4087 1038 N 0 198 -20 0 0 -198 h
+4067 1038 N 0 198 -20 0 0 -198 h
+4047 1038 N 0 198 -19 0 0 -198 h
+4028 1038 N 0 198 -20 0 0 -198 h
+4008 1038 N 0 198 -20 0 0 -198 h
+3988 1038 N 0 198 -20 0 0 -198 h
+3968 1038 N 0 198 -20 0 0 -198 h
+3948 1038 N 0 198 -19 0 0 -198 h
+3929 1038 N 0 198 -20 0 0 -198 h
+3909 1038 N 0 198 -20 0 0 -198 h
+3889 1038 N 0 198 -20 0 0 -198 h
+3869 1038 N 0 198 -20 0 0 -198 h
+3849 1038 N 0 198 -19 0 0 -198 h
+3830 1038 N 0 198 -20 0 0 -198 h
+3810 1038 N 0 198 -20 0 0 -198 h
+3790 1038 N 0 198 -20 0 0 -198 h
+3770 1038 N 0 208 -3 0 0 -198 h
+3767 1048 N 0 228 -5 0 0 -208 h
+3762 1068 N 0 247 -3 0 0 -228 h
+3759 1087 N 0 267 -4 0 0 -247 h
+3755 1107 N 0 286 -4 0 0 -267 h
+3751 1126 N 0 287 -1 0 0 -286 h
+3750 1127 N 0 307 -5 0 0 -287 h
+3745 1147 N 0 327 -6 0 0 -307 h
+3739 1167 N 0 346 -7 0 0 -327 h
+3732 1186 N 0 348 -1 0 0 -346 h
+3731 1188 N 0 366 -8 0 0 -348 h
+3723 1206 N 0 386 -10 0 0 -366 h
+3713 1226 N 0 390 -2 0 0 -386 h
+3711 1230 N 0 406 -10 0 0 -390 h
+3701 1246 N 0 422 -10 0 0 -406 h
+3691 1262 N 0 426 -3 0 0 -422 h
+3688 1266 N 0 445 -14 0 0 -426 h
+3674 1285 N 0 448 -3 0 0 -445 h
+3671 1288 N 0 465 -14 0 0 -448 h
+3072 1305 N 0 471 5 0 0 -465 h
+3077 1311 N 0 485 15 0 0 -471 h
+3092 1325 N 0 490 5 0 0 -485 h
+3097 1330 N 0 505 17 0 0 -490 h
+3114 1345 N 0 507 3 0 0 -505 h
+3117 1347 N 0 522 20 0 0 -507 h
+3137 1362 N 0 525 4 0 0 -522 h
+3141 1365 N 0 535 16 0 0 -525 h
+3157 1375 N 0 544 16 0 0 -535 h
+3173 1384 N 0 546 3 0 0 -544 h
+3176 1386 N 0 556 20 0 0 -546 h
+3196 1396 N 0 564 18 0 0 -556 h
+3214 1404 N 0 565 2 0 0 -564 h
+3216 1405 N 0 572 20 0 0 -565 h
+3236 1412 N 0 579 20 0 0 -572 h
+3256 1419 N 0 584 19 0 0 -579 h
+3275 1424 N 0 584 2 0 0 -584 h
+3277 1424 N 0 588 18 0 0 -584 h
+3295 1428 N 0 591 20 0 0 -588 h
+3315 1431 N 0 593 20 0 0 -591 h
+3335 1433 N 0 594 20 0 0 -593 h
+1395 1038 N 0 198 20 0 0 -198 h
+1415 1038 N 0 198 19 0 0 -198 h
+1434 1038 N 0 198 20 0 0 -198 h
+1454 1038 N 0 198 20 0 0 -198 h
+1474 1038 N 0 198 20 0 0 -198 h
+1494 1038 N 0 198 20 0 0 -198 h
+1514 1038 N 0 198 19 0 0 -198 h
+1533 1038 N 0 198 20 0 0 -198 h
+1553 1038 N 0 198 20 0 0 -198 h
+1573 1038 N 0 198 20 0 0 -198 h
+1593 1038 N 0 198 20 0 0 -198 h
+1613 1038 N 0 198 19 0 0 -198 h
+1632 1038 N 0 198 20 0 0 -198 h
+1652 1038 N 0 198 20 0 0 -198 h
+1672 1038 N 0 198 20 0 0 -198 h
+1692 1038 N 0 198 20 0 0 -198 h
+1712 1038 N 0 198 19 0 0 -198 h
+1731 1038 N 0 198 20 0 0 -198 h
+1751 1038 N 0 198 20 0 0 -198 h
+1771 1038 N 0 198 20 0 0 -198 h
+1791 1038 N 0 198 20 0 0 -198 h
+1811 1038 N 0 198 19 0 0 -198 h
+1830 1038 N 0 198 20 0 0 -198 h
+1850 1038 N 0 198 20 0 0 -198 h
+1870 1038 N 0 198 20 0 0 -198 h
+1890 1038 N 0 198 20 0 0 -198 h
+1910 1038 N 0 198 19 0 0 -198 h
+1929 1038 N 0 198 20 0 0 -198 h
+1949 1038 N 0 198 20 0 0 -198 h
+1969 1038 N 0 198 20 0 0 -198 h
+1989 1038 N 0 198 20 0 0 -198 h
+2009 1038 N 0 198 19 0 0 -198 h
+2028 1038 N 0 198 20 0 0 -198 h
+2048 1038 N 0 198 20 0 0 -198 h
+2068 1038 N 0 198 20 0 0 -198 h
+2088 1038 N 0 198 20 0 0 -198 h
+2108 1038 N 0 198 19 0 0 -198 h
+2127 1038 N 0 198 20 0 0 -198 h
+2147 1038 N 0 198 20 0 0 -198 h
+2167 1038 N 0 198 20 0 0 -198 h
+2187 1038 N 0 198 19 0 0 -198 h
+2206 1038 N 0 198 20 0 0 -198 h
+2226 1038 N 0 198 20 0 0 -198 h
+2246 1038 N 0 198 20 0 0 -198 h
+2266 1038 N 0 198 20 0 0 -198 h
+2286 1038 N 0 198 19 0 0 -198 h
+2305 1038 N 0 198 20 0 0 -198 h
+2325 1038 N 0 198 20 0 0 -198 h
+2345 1038 N 0 198 20 0 0 -198 h
+2365 1038 N 0 198 20 0 0 -198 h
+2385 1038 N 0 198 19 0 0 -198 h
+2404 1038 N 0 198 20 0 0 -198 h
+2424 1038 N 0 198 20 0 0 -198 h
+2444 1038 N 0 198 20 0 0 -198 h
+2464 1038 N 0 198 20 0 0 -198 h
+2484 1038 N 0 198 19 0 0 -198 h
+2503 1038 N 0 198 20 0 0 -198 h
+2523 1038 N 0 198 20 0 0 -198 h
+2543 1038 N 0 198 20 0 0 -198 h
+2563 1038 N 0 198 20 0 0 -198 h
+2583 1038 N 0 198 19 0 0 -198 h
+2602 1038 N 0 198 20 0 0 -198 h
+2622 1038 N 0 198 20 0 0 -198 h
+2642 1038 N 0 198 20 0 0 -198 h
+2662 1038 N 0 198 20 0 0 -198 h
+2682 1038 N 0 198 19 0 0 -198 h
+2701 1038 N 0 198 20 0 0 -198 h
+2721 1038 N 0 198 20 0 0 -198 h
+2741 1038 N 0 198 20 0 0 -198 h
+2761 1038 N 0 198 20 0 0 -198 h
+2781 1038 N 0 198 19 0 0 -198 h
+2800 1038 N 0 198 20 0 0 -198 h
+2820 1038 N 0 198 20 0 0 -198 h
+2840 1038 N 0 198 20 0 0 -198 h
+2860 1038 N 0 198 20 0 0 -198 h
+2880 1038 N 0 198 19 0 0 -198 h
+2899 1038 N 0 198 20 0 0 -198 h
+2919 1038 N 0 198 20 0 0 -198 h
+2939 1038 N 0 198 20 0 0 -198 h
+2959 1038 N 0 208 3 0 0 -198 h
+2962 1048 N 0 228 5 0 0 -208 h
+2967 1068 N 0 247 3 0 0 -228 h
+2970 1087 N 0 267 4 0 0 -247 h
+2974 1107 N 0 286 4 0 0 -267 h
+2978 1126 N 0 287 1 0 0 -286 h
+2979 1127 N 0 307 5 0 0 -287 h
+2984 1147 N 0 327 6 0 0 -307 h
+2990 1167 N 0 346 7 0 0 -327 h
+2997 1186 N 0 348 1 0 0 -346 h
+2998 1188 N 0 366 8 0 0 -348 h
+3006 1206 N 0 386 10 0 0 -366 h
+3016 1226 N 0 390 2 0 0 -386 h
+3018 1230 N 0 406 10 0 0 -390 h
+3028 1246 N 0 422 10 0 0 -406 h
+3038 1262 N 0 426 3 0 0 -422 h
+3041 1266 N 0 445 14 0 0 -426 h
+3055 1285 N 0 448 3 0 0 -445 h
+3058 1288 N 0 465 14 0 0 -448 h
+% End plot #7
+% Begin plot #8
+2.000 UL
+LTb
+LCb setrgbcolor
+/Helvetica findfont 200 scalefont setfont
+3657 1305 M
+-5 6 V
+-15 14 V
+-5 5 V
+-17 15 V
+-3 2 V
+-20 15 V
+-4 3 V
+-16 10 V
+-16 9 V
+-3 2 V
+-20 10 V
+-18 8 V
+-2 1 V
+-20 7 V
+-20 7 V
+-19 5 V
+-2 0 V
+-18 4 V
+-20 3 V
+-20 2 V
+-20 1 V
+5334 1038 M
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-19 0 V
+-20 0 V
+-20 0 V
+-20 0 V
+-3 10 V
+-5 20 V
+-3 19 V
+stroke 3759 1087 M
+-4 20 V
+-4 19 V
+-1 1 V
+-5 20 V
+-6 20 V
+-7 19 V
+-1 2 V
+-8 18 V
+-10 20 V
+-2 4 V
+-10 16 V
+-10 16 V
+-3 4 V
+-14 19 V
+-3 3 V
+-14 17 V
+-585 0 R
+5 6 V
+15 14 V
+5 5 V
+17 15 V
+3 2 V
+20 15 V
+4 3 V
+16 10 V
+16 9 V
+3 2 V
+20 10 V
+18 8 V
+2 1 V
+20 7 V
+20 7 V
+19 5 V
+2 0 V
+18 4 V
+20 3 V
+20 2 V
+20 1 V
+1395 1038 M
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+stroke 2682 1038 M
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+20 0 V
+19 0 V
+20 0 V
+20 0 V
+20 0 V
+3 10 V
+5 20 V
+3 19 V
+4 20 V
+4 19 V
+1 1 V
+5 20 V
+6 20 V
+7 19 V
+1 2 V
+8 18 V
+10 20 V
+2 4 V
+10 16 V
+10 16 V
+3 4 V
+14 19 V
+3 3 V
+14 17 V
+% End plot #8
+stroke
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+1385 4799 N
+0 -3959 V
+3959 0 V
+0 3959 V
+-3959 0 V
+Z stroke
+stroke gsave	%% draw gray scale smooth box
+maxcolors 0 gt {/imax maxcolors def} {/imax 1024 def} ifelse
+5443 840 translate 197 3959 scale 0 setlinewidth
+/ystep 1 imax div def /y0 0 def /ii 0 def
+{ y0 g 0 y0 N 1 0 V 0 ystep V -1 0 f
+/y0 y0 ystep add def /ii ii 1 add def
+ii imax ge {exit} if } loop
+grestore 0 setgray
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 840 N
+197 0 V
+0 3959 V
+-197 0 V
+0 -3959 V
+Z stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+5640 840 M
+-63 0 V
+stroke
+5760 840 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 840 M
+63 0 V
+134 395 R
+-63 0 V
+stroke
+5760 1235 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.2)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 1235 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 1631 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.4)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 1631 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 2027 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.6)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 2027 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 2423 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.8)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 2423 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 2819 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 2819 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 3215 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1.2)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 3215 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 3611 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1.4)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 3611 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 4007 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1.6)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 4007 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 4403 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 1.8)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 4403 M
+63 0 V
+134 396 R
+-63 0 V
+stroke
+5760 4799 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 2)]
+] -66.7 MLshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5443 4799 M
+63 0 V
+stroke
+LCb setrgbcolor
+6300 2819 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 200.0 0.0 true true 0 (|E| / \(e)]
+[(Symbol) 200.0 0.0 true true 0 (l)]
+[(Helvetica) 160.0 -60.0 true true 0 (D)]
+[(Helvetica) 200.0 0.0 true true 0 (/k)]
+[(Helvetica) 160.0 -60.0 true true 0 (B)]
+[(Helvetica) 200.0 0.0 true true 0 (T)]
+[(Helvetica) 160.0 -60.0 true true 0 (e)]
+[(Helvetica) 200.0 0.0 true true 0 (\))]
+] -46.7 MCshow
+grestore
+LTb
+1.000 UL
+LTb
+LCb setrgbcolor
+0.000 3345 840 39 594 BoxColFill
+1.000 UP
+2.000 UL
+LTb
+LCb setrgbcolor
+3345 840 M
+39 0 V
+stroke
+LTb
+LCb setrgbcolor
+3345 1434 M
+39 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
